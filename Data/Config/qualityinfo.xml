@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<qualityinfo>
+  <!--Broken Grey vanilla=808080-->
+	<quality key="0" color="C1CDCD"/>
+  <!--Faulty Brown vanilla=808080-->
+	<quality key="1" color="4F3F35"/>
+  <!--Poor Orange vanilla=808080-->
+	<quality key="2" color="B2B200"/>
+  <!--Good Yellow vanilla=808080-->
+	<quality key="3" color="53868B"/>
+  <!--Fine Green vanilla=808080-->
+	<quality key="4" color="006400"/>
+  <!--Great Blue vanilla=808080-->
+	<quality key="5" color="000080"/>
+  <!--Flawless Magenta vanilla=808080-->
+	<quality key="6" color="8C1953"/>
+  <!-- Grey=C1CDCD, Brown=4F3F35, Orange=D6893A, Yellow=FFDF55, Green=006400, Blue=53868B,0000FF, Magenta=2E1150,FF00FF,8C198C -->
+</qualityinfo>
