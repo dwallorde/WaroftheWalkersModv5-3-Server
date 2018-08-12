@@ -4759,6 +4759,7 @@ kind of free
 	<drop event="Harvest" name="potassiumNitratePowder" count="40" prob=".66" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="scrapLead" count="10" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="TungstenFragment" count="10" prob="0.5" tool_category="harvestingToolsBonus" />
+	<drop event="Destroy" name="rockSmall" count="8"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="snowRockResource1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -4794,6 +4795,7 @@ kind of free
 	<drop event="Harvest" name="scrapLead" count="10" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="CopperFragment" count="10" prob="0.45" tool_category="harvestingTools" />
 	<drop event="Harvest" name="ZincFragment" count="10" prob="0.45" tool_category="harvestingTools" />
+	<drop event="Destroy" name="rockSmall" count="8"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="snowRockResource02Broke1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -4834,6 +4836,7 @@ kind of free
 	<drop event="Harvest" name="potassiumNitratePowder" count="20" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="scrapLead" count="12" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="TungstenFragment" count="10" prob="0.22" tool_category="harvestingToolsBonus"/>
+	<drop event="Destroy" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="desertRockResource1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -4870,6 +4873,7 @@ kind of free
 	<drop event="Harvest" name="scrapLead" count="10" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="CopperFragment" count="10" prob="0.22" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="ZincFragment" count="10" prob="0.22" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="rockSmall" count="5"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="desertRockResource02Broke1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -4909,6 +4913,7 @@ kind of free
 	<drop event="Harvest" name="potassiumNitratePowder" count="20" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="scrapLead" count="12" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="TungstenFragment" count="10" prob="0.22" tool_category="harvestingToolsBonus"/>
+	<drop event="Destroy" name="rockSmall" count="6"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="burntForestRockResource1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -4944,6 +4949,7 @@ kind of free
 	<drop event="Harvest" name="scrapLead" count="10" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="CopperFragment" count="10" prob="0.3" tool_category="harvestingTools" />
 	<drop event="Harvest" name="ZincFragment" count="10" prob="0.3" tool_category="harvestingTools" />
+	<drop event="Destroy" name="rockSmall" count="5"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="burntForestRockResource02Broke1" />
 	<property name="Map.Color" value="120,120,120"/>
@@ -5028,6 +5034,7 @@ kind of free
 	<property name="CustomIcon" value="screamerBlock"/>
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Campfire"/>
+	<property name="PlaySound" value="screameralarm1"/>
 	<property name="ParticleName" value="campfire"/>
 	<property name="ParticleOffset" value="0.5,1,0.5"/>
 	<property name="Stacknumber" value="1"/>
@@ -5066,6 +5073,33 @@ kind of free
 	<property name="Group" value="Building"/>
 	<property name="EconomicValue" value="500"/>
 </block>
+
+<!-- <block id="459" name="screamerBlock">
+	<property name="CustomIcon" value="screamerBlock"/>
+	<property name="CreativeMode" value="Player"/>
+	<property name="Class" value="Speaker"/>
+	<property name="PlaySound" value="screameralarm1"/>
+	<property name="Material" value="Mmetal_weak"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Model" value="Entities/Electrical/loudspeakerPrefab"/> <property name="HandleFace" value="South"/>
+	<property name="ImposterDontBlock" value="true"/>
+	<property name="LootList" value="42"/>
+	<property name="RequiredPower" value="5"/>
+	<property name="HeatMapStrength" value="50"/>
+	<property name="HeatMapTime" value="1250"/>
+	<property name="HeatMapFrequency" value="10"/>
+	<property name="Group" value="Science"/>
+	<property class="RepairItems">
+		<property name="forgedIron" value="3"/>
+		<property name="electricParts" value="2"/>
+	</property>
+	<drop event="Harvest" name="electricParts" count="0,2" tool_category="Screwdriver"/>
+	<drop event="Harvest" name="scrapIron" count="5,10"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="TakeDelay" value="5"/>
+	<property name="EconomicValue" value="72"/>
+</block> -->
 
 <!-- WOTW Mod -->
 <block id="460" name="coffeemaker">
@@ -6196,10 +6230,11 @@ kind of free
 	<property name="Model" value="Entities/Trees/Hollywood_Juniper15mPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,4,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<property name="CanPlayersSpawnOn" value="false"/>
 	<property name="ParticleOnDeath" value="treeGib_small_dust"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
 
@@ -6208,8 +6243,9 @@ kind of free
 	<property name="Model" value="Entities/Trees/MountainPine40mPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,10,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 </block>
@@ -6220,8 +6256,9 @@ kind of free
 	<property name="Model" value="Entities/Trees/MountainPine45mPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,19,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="14"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt"/>
 </block>
@@ -6232,8 +6269,9 @@ kind of free
 	<property name="Model" value="Entities/Trees/MountainPine55mPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,24,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 </block>
@@ -6244,8 +6282,9 @@ kind of free
 	<property name="Model" value="Entities/Trees/MountainPine60mPrefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,27,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 </block>
@@ -6256,8 +6295,9 @@ kind of free
 	<property name="Model" value="Entities/Trees/MountainPine75Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,28,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="30"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_75m"/>
 </block>
@@ -6267,9 +6307,10 @@ kind of free
 	<property name="Material" value="treeWoodLarge"/>
 	<property name="Model" value="Entities/Trees/MountainPineDeadPrefab"/>
 	<property name="MultiBlockDim" value="1,21,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<property name="ParticleOnDeath" value="treeGib_burnt_55m"/>
 	<drop event="Destroy" name="treePlantedMountainPine1m" count="1"/>
 </block>
@@ -6279,9 +6320,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Birch35Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,7,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 </block>
 
 <block id="567" name="treeBirch12m">
@@ -6290,9 +6332,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Birch50Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,4,1"/>
-	<property name="BigDecorationRadius" value="3"/>
+	<property name="BigDecorationRadius" value="4"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
 	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="14"/>
 </block>
 
 <block id="568" name="treeBirch15m">
@@ -6301,9 +6344,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Birch55Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,13,1"/>
-	<property name="BigDecorationRadius" value="4"/>
+	<property name="BigDecorationRadius" value="5"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 </block>
 
 <block id="569" name="treeDeadShrub">
@@ -6325,9 +6369,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Maple20Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,5,1"/>
-	<property name="BigDecorationRadius" value="2"/>
+	<property name="BigDecorationRadius" value="3"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_6m"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -6337,9 +6382,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Maple30Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,7,1"/>
-	<property name="BigDecorationRadius" value="3"/>
+	<property name="BigDecorationRadius" value="4"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_small"/>
 	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="14"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -6356,9 +6402,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Maple33Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,7,1"/>
-	<property name="BigDecorationRadius" value="4"/>
+	<property name="BigDecorationRadius" value="5"/>
 	<property name="ParticleOnDeath" value="treeGib_birch_15m"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1,2"/>
 </block>
 
@@ -6368,9 +6415,10 @@ kind of free
 	<property name="Model" value="Entities/Trees/Maple81Prefab"/>
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="MultiBlockDim" value="1,10,1"/>
-	<property name="BigDecorationRadius" value="5"/>
+	<property name="BigDecorationRadius" value="6"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1,2"/>
 </block>
 
@@ -6383,6 +6431,7 @@ kind of free
 	<property name="BigDecorationRadius" value="6"/>
 	<property name="ParticleOnDeath" value="treeGib_birch"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="30"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1,2"/>
 </block>
 
@@ -6404,6 +6453,7 @@ kind of free
 	<property name="ParticleOnDeath" value="treeGib_burnt_small"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="3,5" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -6416,6 +6466,7 @@ kind of free
 	<property name="BigDecorationRadius" value="4"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="8,15" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -6428,6 +6479,7 @@ kind of free
 	<property name="BigDecorationRadius" value="4"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="coal" count="10,20" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="30"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
 
@@ -6446,6 +6498,7 @@ kind of free
 	<property name="BigDecorationRadius" value="2"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_01"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
@@ -6457,6 +6510,7 @@ kind of free
 	<property name="ModelOffset" value="0,-0.3,0"/>
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<property name="ParticleOnDeath" value="treeGib_dead_02"/>
 	<drop event="Destroy" name="treePlantedMaple1m" count="1"/>
 </block>
@@ -6503,6 +6557,7 @@ kind of free
 	<property name="MultiBlockDim" value="1,6,1"/>
 	<property name="BigDecorationRadius" value="1"/>
 	<drop event="Harvest" name="wood" count="30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="6"/>
 	<property name="FallOver" value="true"/>
 	<property name="ParticleOnDeath" value="treeGib_winter_small"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1"/>
@@ -6516,6 +6571,7 @@ kind of free
 	<property name="MultiBlockDim" value="1,12,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<drop event="Harvest" name="wood" count="70" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="14"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter01"/>
 </block>
@@ -6533,6 +6589,7 @@ kind of free
 	<property name="IsPlant" value="true"/> <!-- it shall never be placed on rocks -->
 	<property name="LootList" value="35"/>
 	<drop event="Harvest" name="wood" count="20,30" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="4"/>
 	<drop event="Destroy" count="0"/>
 </block>
 
@@ -6544,6 +6601,7 @@ kind of free
 	<property name="MultiBlockDim" value="1,19,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<drop event="Harvest" name="wood" count="110" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="22"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter02"/>
 </block>
@@ -6556,6 +6614,7 @@ kind of free
 	<property name="MultiBlockDim" value="1,28,1"/>
 	<property name="BigDecorationRadius" value="2"/>
 	<drop event="Harvest" name="wood" count="150" tool_category="harvestingTools"/>
+	<drop event="Destroy" name="wood" count="30"/>
 	<drop event="Destroy" name="treePlantedWinterPine1m" count="1,2"/>
 	<property name="ParticleOnDeath" value="treeGib_winter03"/>
 </block>
@@ -6951,6 +7010,7 @@ kind of free
 	<drop event="Harvest" name="potassiumNitratePowder" count="10" prob="0.33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="scrapLead" count="10" prob="0.33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="TungstenFragment" count="10" prob="0.22" tool_category="harvestingToolsBonus"/>
+	<drop event="Destroy" name="rockSmall" count="8"/>
 	<drop event="Destroy" count="0"/>
 	<property name="DowngradeBlock" value="rockResourceBroke1"/>
 	<property name="Map.Color" value="120,120,120"/>
@@ -7091,6 +7151,7 @@ kind of free
 	<drop event="Harvest" name="scrapLead" count="10" prob=".33" tool_category="harvestingTools"/>
 	<drop event="Harvest" name="CopperFragment" count="10" prob="0.15" tool_category="harvestingTools" />
 	<drop event="Harvest" name="ZincFragment" count="10" prob="0.15" tool_category="harvestingTools" />
+	<drop event="Destroy" name="rockSmall" count="5"/>
 	<property name="DowngradeBlock" value="rockResource02Broke1"/>
 </block>
 
@@ -23571,7 +23632,8 @@ kind of free
 <block id="2008" name="speaker">
 	<property name="CreativeMode" value="Player"/>
 	<property name="Class" value="Speaker"/>
-	<property name="PlaySound" value="alarm1"/>
+	<!-- <property name="PlaySound" value="alarm1"/> -->
+	<property name="PlaySound" value="speakeralarm1"/>
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Model" value="Entities/Electrical/loudspeakerPrefab"/> <property name="HandleFace" value="South"/>

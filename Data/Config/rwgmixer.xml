@@ -3,8 +3,8 @@
 	<world ruleset="vanilla" />
 	
 	<rulesets>
-		<ruleset name="vanilla" cell_cache_size="8" cell_size="1806" cell_offset="0" generation_distance="9996" terrain_generator="vanilla" biome_generator="vanilla">
-			<cell_rule name="deadCell" prob="0.05"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
+		<ruleset name="vanilla" cell_cache_size="8" cell_size="1800" cell_offset="0" generation_distance="8000" terrain_generator="vanilla" biome_generator="vanilla">
+			<cell_rule name="deadCell" prob="0.2"/> <!-- set prob="0.25" to prob="0" if you want more hubs to appear -->
 			<cell_rule name="cityCell" prob="0.5"/>
 			<cell_rule name="townCell" prob="0.25"/>
 			<cell_rule name="ruralCell" prob="0.2"/>
@@ -106,7 +106,7 @@
 			<hub_type value="rural"/>
 			<width value="168, 252" />
 			<height value="168, 252" />
-			<path_material value="dirt" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="6" />
 
 			<prefab_rule name="MINI_RURAL_POIS"/>
@@ -127,7 +127,7 @@
 			<hub_type value="rural"/>
 			<width value="252, 357" />
 			<height value="252, 357" />
-			<path_material value="dirt" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="6" />
 
 			<prefab_rule name="RURAL_VILLAGE_POIS"/>
@@ -148,7 +148,7 @@
 			<hub_type value="rural"/>
 			<width value="168, 273" />
 			<height value="168, 273" />
-			<path_material value="dirt" /> 
+			<path_material value="asphalt" /> 
 			<path_radius value="6" />
 
 			<prefab_rule name="OLDWEST_POIS"/>
@@ -276,7 +276,7 @@
 			<hub_type value="rural"/>
 			<width value="100, 100" />
 			<height value="100, 100" />
-			<path_material value="dirt" />
+			<path_material value="asphalt" />
 			<path_radius value="6" />
 
 			<prefab_rule name="ruralPois"/>
@@ -617,7 +617,7 @@
 			<prefab name="xcostum_Hospital(by_Wsiegel)" max_count="2" />			
 			<prefab name="xcostum_Park(by_Guppycur)" max_count="2" />
 			<prefab name="xcostum_house_number14(by_Kam)" max_count="2" />
-			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="2" />
+			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="1" />
 			<prefab name="xcostum_Woodhouse(by_Tom)" max_count="2" />
 			<prefab name="xcostum_Redhouse(by_Tom)" max_count="2" />
 			<prefab name="dwalls_AFrameHouse1" max_count="2" />
@@ -698,7 +698,7 @@
 			<prefab name="xcostum_house_modern_03(by_Kam)" max_count="2" />
 			<prefab name="xcostum_house_modern_04(by_Kam)" max_count="2" />
 			<prefab name="xcostum_house_modern_05(by_Kam)" max_count="2" />			
-			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="2" />			
+			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="1" />			
 			<prefab name="xcostum_Stonehouse01(by_Tom)" max_count="2" />
 			<prefab name="xcostum_Hostel_destroyed(by_Tom)" max_count="2" />
 			<prefab name="xcostum_Villa(by_Tom)" max_count="2" />
@@ -766,7 +766,7 @@
 			<prefab name="xcostum_PetStore(by_Jackelmyer)" max_count="2" />
 			<prefab name="xcostum_BoxingGym(by_KamR)" max_count="2" />	
 			<prefab name="xcostum_FarmerJoesNursery(by_Stallionsden)" max_count="2" />
-			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="2" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
 			<prefab name="xcostum_Shoppingcenter(by_Tom)" max_count="2" />
 			<prefab name="xcostum_donut_shop(by_bigstep70)" max_count="2" />			
 			<prefab name="xcostum_drivethru(by_bigstep70)" max_count="2" />
@@ -816,9 +816,9 @@
 			<prefab name="xcostum_Apartment_Stores(by_Laz_Man)" max_count="2" />
 			<prefab name="xcostum_Asia_Restaurant_city(by_Redlotus)" max_count="2" />			
 			<prefab name="xcostum_Courthouse(by_stallionsden)" max_count="2" />
-			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="2" />
+			<prefab name="xcostum_NotreDamn_(by_tehkarma)" max_count="1" />
 			<prefab name="xcostum_bridgesideapartmentsA16(by_Batman)" max_count="2" />
-			<prefab name="xcostum_Hospital(by_Tom)" max_count="2" />
+			<prefab name="xcostum_Hospital(by_Tom)" max_count="1" />
 			<prefab name="xcostum_Spirallibrary(by_Tom)" max_count="2" />
 			<prefab name="dwalls_homehardware" max_count="1" />
 			<prefab name="dwalls_Restaurant_Bar" max_count="1" />
@@ -918,7 +918,7 @@
 			<prefab name="xcostum_CountyJail(by_Volar)" max_count="2" />
 			<prefab name="xcostum_Plant(by_Wsiegel)" max_count="2" />
 			<prefab name="xcostum_Windowfactory(by_magoli)" max_count="2" />
-			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="2" />
+			<prefab name="xcostum_VarietiesDepartmentStore(by_Stallionsden)" max_count="1" />
 			<prefab name="dwalls_Store_Auto_RepairLTD" max_count="1" />
 			<prefab name="dwalls_Store_Auto_Wreck_Yard" max_count="1" />
 			<!-- <prefab rule="traderGroup" min_count="0" max_count="1" prob="0.4" /> -->
@@ -933,6 +933,8 @@
 			<prefab name="ozzy_village" max_count="1" />
 			<prefab name="Random_Castle" max_count="1" />
 			<prefab name="silent_nameIPAR" max_count="1" />
+			<prefab name="muscip_viking_village" max_count="1" />
+			<prefab name="muscipfreighter" max_count="1" />
 		</prefab_rule>
 
 
@@ -975,6 +977,8 @@
 			<prefab name="dwalls_Beachhouse" max_count="1" />
 			<prefab name="ozzy_barn" max_count="1" />
 			<prefab name="silent_ssfarm" max_count="1" />
+			<prefab name="muscip_viking_village" max_count="1" />
+			<prefab name="muscipfreighter" max_count="1" />
 		</prefab_rule>		
 
 		<prefab_rule name="W_POIs_common_Set_B">
@@ -1002,6 +1006,8 @@
 			<prefab name="Dwalls_Modded_church" max_count="1" />
 			<prefab name="Ozzy_Church" max_count="1" />
 			<prefab name="Random_HuntingLodge" max_count="1" />
+			<prefab name="muscip_viking_village" max_count="1" />
+			<prefab name="muscipfreighter" max_count="1" />
 		</prefab_rule>
 		
 		<prefab_rule name="W_POIs_common_Set_C">

@@ -2722,7 +2722,7 @@
 	difficulty="easy">
 		<objective type="FetchKeep" id="ductTape" value="5" />
 		<objective type="FetchKeep" id="wood" value="10" />
-		<objective type="FetchKeep" id="cloth" value="10" />
+		<objective type="FetchKeep" id="cloth" value="110" />
 		<objective type="FetchKeep" id="aloeCream" value="25" />
 		<objective type="FetchKeep" id="bandage" value="50" />
 		<objective type="Craft" id="firstAidBandage" value="25" />
@@ -3658,7 +3658,6 @@
 		<objective type="FetchKeep" id="minibikeWheels" value="1" />
 		<objective type="FetchKeep" id="carBattery" value="1" />
 		<objective type="FetchKeep" id="shoppingBasketItem" value="1" />
-		<objective type="FetchKeep" id="padlock" value="1" />
 		<reward type="Exp" value="3000" />
 		<reward type="Quest" id="classtrainingmechanic4" />
 	</quest>
@@ -3676,6 +3675,7 @@
 		<objective type="Craft" id="minibikeChassis" value="1" />
 		<objective type="Craft" id="minibikeSeat" value="1" />
 		<objective type="Craft" id="minibikeHandlebars" value="1" />
+		<objective type="Craft" id="padlock" value="1" />
 		<reward type="Exp" value="3500" />
 		<reward type="Recipe" id="ClassPaperMechanic" />
 		<reward type="Quest" id="classtrainingmechanic5" />

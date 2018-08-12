@@ -423,9 +423,9 @@ Mesh files no longer used:
 	<property name="Crosshair_max_distance" value="6"/>
 	<!-- 6 -->
 	<property name="Magazine_size" value="15"/>
-	<property name="Magazine_items" value="9mmBullet,9mmHollowPointBullet"/>
-	<property name="Magazine_item_ray_counts" value="1, 1"/>
-	<property name="Magazine_item_ray_spreads" value="0.85, 0.45"/>
+	<property name="Magazine_items" value="9mmBullet,9mmHollowPointBullet,unloadgun1"/>
+	<property name="Magazine_item_ray_counts" value="1, 1, 1"/>
+	<property name="Magazine_item_ray_spreads" value="0.85, 0.45, 0.85"/>
 	<!-- .85 -->
 	<property name="Reload_time" value="2"/>
 	<property name="Bullet_icon" value="pistol"/>
@@ -536,9 +536,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
 		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
 		<property name="Magazine_size" value="6"/>
-		<property name="Magazine_items" value="44MagBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0.87"/> <!-- .87 -->
+		<property name="Magazine_items" value="44MagBullet,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0.87, 0.87"/> <!-- .87 -->
 		<property name="Reload_time" value="4"/>
 		<property name="Bullet_icon" value="pistol"/>
 		<property name="Sound_start" value="44magnum_fire"/>
@@ -592,9 +592,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
 		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
 		<property name="Magazine_size" value="8"/>
-		<property name="Magazine_items" value="shotgunShell"/>
-		<property name="Magazine_item_ray_counts" value="9"/>
-		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
+		<property name="Magazine_items" value="shotgunShell,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="9, 9"/>
+		<property name="Magazine_item_ray_spreads" value="0.74, 0.74"/> <!-- .74 -->
 		<property name="Reload_time" value="2.6"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="sawed_off_shotgun_fire"/>
@@ -650,9 +650,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="23"/> <!-- 23 -->
 		<property name="Crosshair_max_distance" value="28"/> <!-- 28 -->
 		<property name="Magazine_size" value="8"/>
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug"/>
-		<property name="Magazine_item_ray_counts" value="8, 1"/>
-		<property name="Magazine_item_ray_spreads" value="0.835,0.605"/> <!-- .835 / .605 -->
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug, unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="8, 1, 8"/>
+		<property name="Magazine_item_ray_spreads" value="0.835,0.605,0.835"/> <!-- .835 / .605 -->
 		<property name="Reload_time" value="2.6"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="pump_shotgun_fire"/>
@@ -711,9 +711,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7"/> <!-- 7 -->
 		<property name="Crosshair_max_distance" value="9"/> <!-- 9 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="9mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="9mmBullet,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="4.1"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="mp5_fire_start"/>
@@ -772,9 +772,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="13"/> <!-- 13 -->
 		<property name="Crosshair_max_distance" value="16"/> <!-- 16 -->
 		<property name="Magazine_size" value="30"/>
-		<property name="Magazine_items" value="762mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="762mmBullet,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="3.9"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="ak47_fire_start"/>
@@ -834,9 +834,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="36"/> <!-- 36 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="762mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="762mmBullet,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="2.66"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="hunting_rifle_fire"/>
@@ -890,9 +890,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="45"/> <!-- 45 -->
 		<property name="Crosshair_max_distance" value="54"/> <!-- 54 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="762mmBullet"/>
-		<property name="Magazine_item_ray_counts" value="1"/>
-		<property name="Magazine_item_ray_spreads" value="0"/>
+		<property name="Magazine_items" value="762mmBullet,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="1, 1"/>
+		<property name="Magazine_item_ray_spreads" value="0, 0"/>
 		<property name="Reload_time" value="2.5"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="sniperrifle_fire"/>
@@ -947,7 +947,7 @@ Mesh files no longer used:
 		<property name="Crosshair_max_distance" value="34"/>
 		<!-- <property name="Range" value="200"/> -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="rocket"/>
+		<property name="Magazine_items" value="rocket,unloadgun2"/>
 		<property name="Rays_spread" value="0.095"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -988,9 +988,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="41"/> <!-- 41 -->
 		<property name="Crosshair_max_distance" value="49"/> <!-- 49 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="blunderbussAmmo"/>
-		<property name="Magazine_item_ray_counts" value="10"/>
-		<property name="Magazine_item_ray_spreads" value="0.74"/> <!-- .74 -->
+		<property name="Magazine_items" value="blunderbussAmmo,unloadgun1"/>
+		<property name="Magazine_item_ray_counts" value="10, 10"/>
+		<property name="Magazine_item_ray_spreads" value="0.74, 0.74"/> <!-- .74 -->
 		<property name="Reload_time" value="3.9"/>
 		<property name="Bullet_icon" value="uzi"/>
 		<property name="Sound_start" value="blunderbuss_fire"/>
@@ -2174,7 +2174,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow"/>
+		<property name="Magazine_items" value="arrow,ironArrow,steelArrow,unloadgun3"/>
 		<property name="Rays_spread" value="0.017"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2229,7 +2229,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt, unloadgun3"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2279,7 +2279,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1"/>
-		<property name="Magazine_items" value="arrow,ironArrow,steelArrow,flamingArrow, TungstenArrow, ExplodingTungstenArrow"/>
+		<property name="Magazine_items" value="arrow,ironArrow,steelArrow,flamingArrow, TungstenArrow, ExplodingTungstenArrow, unloadgun3"/>
 		<property name="Rays_spread" value="0.011"/>
 		<property name="Reload_time" value="0.9"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -2435,6 +2435,11 @@ Mesh files no longer used:
 	<property name="DropScale" value="4"/>
 	<property name="Group" value="Ammo/Weapons"/>
 	<property name="EconomicValue" value="6"/>
+	<!-- <property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="6,9.4"/>
+		<property name="BlockDamage" value="1.6,5"/>
+	</property> -->
 	<property name="CraftingSkillGroup" value="ammoCrafting"/>
 </item>
 
@@ -6255,7 +6260,7 @@ Mesh files no longer used:
 	<property name="Group" value="Science,Basics"/>
 	<property name="DescriptionKey" value="bandageDesc"/>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillMiscellaneous"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 	<property name="ActionExp" value="10"/>
 	<property name="PickupJournalEntry" value="firstAidTip"/>
 </item>
@@ -6272,7 +6277,7 @@ Mesh files no longer used:
 		<property name="Debuff" value="bleeding,bleeding2,bleeding3,bleeding4,arrowCriticalBleedout,biteMark" />
 	</property>
 	<property name="DescriptionKey" value="firstAidBandageDesc"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 	<property name="CraftingIngredientExp" value="2"/>
 </item>
 
@@ -6292,7 +6297,7 @@ Mesh files no longer used:
 		<property name="Debuff" value="bleeding,bleeding2,bleeding3,bleeding4,arrowCriticalBleedout,biteMark" />
 	</property>
 	<property name="DescriptionKey" value="firstAidKitDesc"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 </item>
 
 <item id="661" name="bloodDrawKit">
@@ -6316,7 +6321,7 @@ Mesh files no longer used:
 		<property name="Create_item" value="bloodBag"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 	<property name="Group" value="Resources"/>
 	<property name="ActionExp" value="10"/>
 </item>
@@ -6340,7 +6345,7 @@ Mesh files no longer used:
 		<property name="Sound_start" value="player_drinking"/>
 	</property>
 	<property name="ActionSkillGroup" value="Medicine"/>
-	<property name="CraftingSkillGroup" value="craftSkillScience"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 	<property name="CraftingIngredientExp" value="3"/>
 	<property name="Group" value="Science"/>
 	<property name="ActionExp" value="10"/>
@@ -8532,6 +8537,7 @@ Mesh files no longer used:
 	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Science"/>
 	<property name="DescriptionKey" value="plantedAloe3HarvestDesc"/>
+	<property name="CraftingSkillGroup" value="Medicine"/>
 </item>
 
 <item id="1316" name="chrysanthemumPlant">
@@ -8546,6 +8552,7 @@ Mesh files no longer used:
 	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Food/Cooking"/>
 	<property name="DescriptionKey" value="plantedChrysanthemum3HarvestDesc"/>
+	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 </item>
 
 <item id="1317" name="scrapBrass"> <!-- scrap material -->
@@ -8793,6 +8800,7 @@ Mesh files no longer used:
 	<property name="CraftingIngredientTime" value="5"/>
 	<property name="Group" value="Resources"/>
 	<property name="DescriptionKey" value="plantedGoldenrod3HarvestDesc"/>
+	<property name="CraftingSkillGroup" value="craftSkillCooking"/>
 </item>
 
 <item id="1336" name="oldCash">
@@ -9954,9 +9962,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="45" />
 		<property name="Crosshair_max_distance" value="110" />
 		<property name="Magazine_size" value="15" />
-		<property name="Magazine_items" value="32mmBullet" />
-		<property name="Magazine_item_ray_counts" value="1" />
-		<property name="Magazine_item_ray_spreads" value="0" />
+		<property name="Magazine_items" value="32mmBullet,unloadgun1" />
+		<property name="Magazine_item_ray_counts" value="1, 1" />
+		<property name="Magazine_item_ray_spreads" value="0, 0" />
 		<property name="Reload_time" value="2.5" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="hunting_rifle_fire" />
@@ -10049,6 +10057,11 @@ Mesh files no longer used:
 	<property name="Material" value="brass" />
 	<property name="HoldType" value="21" />
 	<property name="Stacknumber" value="1000" />
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="60,95" />
+		<property name="BlockDamage" value="3,8" />
+	</property>
 	<property name="Group" value="Ammo/Weapons" />
 	<property name="CraftingSkillGroup" value="ammoCrafting"/>
 </item>
@@ -10095,9 +10108,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="5"/>
 		<property name="Crosshair_max_distance" value="6"/>
 		<property name="Magazine_size" value="8" />
-		<property name="Magazine_items" value="44MagBullet, 44HollowPointMagBullet" />
-		<property name="Magazine_item_ray_counts" value="1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0, 0" />
+		<property name="Magazine_items" value="44MagBullet, 44HollowPointMagBullet, unloadgun1" />
+		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
+		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="1.5" />
 		<property name="Bullet_icon" value="pistol" />
 		<property name="Sound_start" value="pistol_fire" />
@@ -10260,9 +10273,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="7" />
 		<property name="Crosshair_max_distance" value="9" />
 		<property name="Magazine_size" value="30" />
-		<property name="Magazine_items" value="556mmBullet,556mmNATOBullet" />
-		<property name="Magazine_item_ray_counts" value="1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0, 0" />
+		<property name="Magazine_items" value="556mmBullet,556mmNATOBullet, unloadgun1" />
+		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
+		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="3.2" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="mp5_fire_start" />
@@ -10427,9 +10440,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30" />
 		<property name="Crosshair_max_distance" value="100" />
 		<property name="Magazine_size" value="20" />
-		<property name="Magazine_items" value="762mmBullet,762mmHollowPointBullet" />
-		<property name="Magazine_item_ray_counts" value="1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0, 0" />
+		<property name="Magazine_items" value="762mmBullet,762mmHollowPointBullet, unloadgun1" />
+		<property name="Magazine_item_ray_counts" value="1, 1, 1" />
+		<property name="Magazine_item_ray_spreads" value="0, 0, 0" />
 		<property name="Reload_time" value="1.75" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="sniperrifle_fire" />
@@ -10657,9 +10670,9 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="23" />
 		<property name="Crosshair_max_distance" value="28" />
 		<property name="Magazine_size" value="10" />
-		<property name="Magazine_items" value="shotgunShell, shotgunSlug, IncendiaryShotgunSlug" />
-		<property name="Magazine_item_ray_counts" value="8, 1, 1" />
-		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.25" />
+		<property name="Magazine_items" value="shotgunShell, shotgunSlug, IncendiaryShotgunSlug, unloadgun1" />
+		<property name="Magazine_item_ray_counts" value="8, 1, 1, 8" />
+		<property name="Magazine_item_ray_spreads" value="0.75, 0.25, 0.25, 0.75" />
 		<property name="Reload_time" value="1.8" />
 		<property name="Bullet_icon" value="uzi" />
 		<property name="Sound_start" value="pump_shotgun_fire" />
@@ -10775,7 +10788,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1" />
-		<property name="Magazine_items" value="arrow, ironArrow, steelArrow, flamingArrow, TungstenArrow, ExplodingTungstenArrow" />
+		<property name="Magazine_items" value="arrow, ironArrow, steelArrow, flamingArrow, TungstenArrow, ExplodingTungstenArrow, unloadgun3" />
 		<property name="Rays_spread" value="0.015" />
 		<property name="Reload_time" value="0.8" />
 		<property name="Bullet_icon" value="uzi" />
@@ -10905,7 +10918,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="1" />
-		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt, TungstenCrossbowBolt, FlamingTungstenCrossbowBolt" />
+		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt, TungstenCrossbowBolt, FlamingTungstenCrossbowBolt, unloadgun3" />
 		<property name="Rays_spread" value="0.012" />
 		<property name="Reload_time" value="1.8" />
 		<property name="Bullet_icon" value="uzi" />
@@ -11193,6 +11206,7 @@ Mesh files no longer used:
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillStoneScrapIronTools"/>
 	<property name="RepairExpMultiplier" value="5.5"/>
+	<property name="DescriptionKey" value="ScrapIronAxeDesc"/>
 </item>
 
 <item id="1571" name="ScrapIronShovel">
@@ -13423,12 +13437,11 @@ Mesh files no longer used:
 	<property name="EconomicValue" value="1000" />
 </item>
 
-<!-- Remove -->
-<item id="1723" name="MagazineTailoring">
-	<property name="CustomIcon" value="MagazineTailoring" />
+<item id="1723" name="MagazineMechanicTools">
+	<property name="CustomIcon" value="MagazineMechanicTools" />
 	<property name="Extends" value="MagazineMaster" />
 	<property class="Action1">
-		<!-- <property name="Skills_to_gain" value="Tailoring" /> -->
+		<property name="Skills_to_gain" value="mechanicTools" />
 	</property>
 	<property name="EconomicValue" value="1000" />
 </item>
@@ -14009,7 +14022,7 @@ Mesh files no longer used:
 		<property name="Gain_health" value="5" />
 		<property name="Gain_wellness" value="0.7" />
 		<property name="Sound_start" value="UseActions/player_drinking" />
-		<property name="Buff" value="gainImmunity_small_Trigger" />
+		<property name="Buff" value="extinguishFireBuff,gainImmunity_small_Trigger" />
 		<property name="Create_item" value="emptyJar" />
     </property>
     <property name="Group" value="Food/Cooking" />
@@ -14274,7 +14287,7 @@ Mesh files no longer used:
       <property name="Gain_stamina" value="40" />
       <property name="Sound_start" value="UseActions/player_drinking" />
       <property name="Gain_wellness" value="1.1" />
-	  <property name="Buff" value="GreenTea,Soberizing,gainImmunity_xsmall_Trigger" />
+	  <property name="Buff" value="GreenTea,extinguishFireBuff,Soberizing,gainImmunity_xsmall_Trigger" />
 	  <property name="Buff_chance" value="0.6,1,1" />
       <property name="Debuff" value="dysentery" />
 	  <property name="Create_item" value="emptyJar" />
@@ -18938,6 +18951,7 @@ Mesh files no longer used:
 	<property name="RepairExpMultiplier" value="5.5"/>
 	<property name="ActionSkillGroup" value="Mining Tools"/>
 	<property name="CraftingSkillGroup" value="craftSkillStoneScrapIronTools"/>
+	<property name="DescriptionKey" value="ScrapIronPickaxeDesc"/>
 </item>
 
 <item id="2058" name="stoneHammer">
@@ -22827,7 +22841,7 @@ Mesh files no longer used:
 		<property name="Crosshair_min_distance" value="30"/> <!-- 30 -->
 		<property name="Crosshair_max_distance" value="30"/> <!-- 30 -->
 		<property name="Magazine_size" value="5"/>
-		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt"/>
+		<property name="Magazine_items" value="ironCrossbowBolt, steelCrossbowBolt, explodingCrossbowBolt, unloadgun3"/>
 		<property name="Rays_spread" value="0.012"/>
 		<property name="Reload_time" value="2"/>
 		<property name="Bullet_icon" value="uzi"/>
@@ -23996,6 +24010,89 @@ Mesh files no longer used:
 	<property class="Action1">
 		<property name="Skills_to_gain" value="tungstenHandleBarsSchematicPerk"/>
 	</property>
+</item>
+
+<!-- Ranged Weapon Unload -->
+<item id="2372" name="unloadgun1">
+	<property name="CustomIcon" value="unloadgun"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Pistol/9mm_bulletPrefab"/>
+	<property name="Material" value="brass"/>
+	<property name="HoldType" value="21"/>
+	<property name="Stacknumber" value="1"/> <!-- STK ammo -->
+	<property name="CraftingSkillGroup" value="ammoCrafting"/>
+	<property name="EconomicValue" value="0"/>
+	<property name="Weight" value="0"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true" />
+		<property name="EntityDamage" value="0,0" />
+		<property name="BlockDamage" value="0,0" />
+	</property>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<!--  Rocket Launcher Weapon Unload -->
+<item id="2373" name="unloadgun2">
+	<property name="CustomIcon" value="unloadgun"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketPrefab"/>
+	<property name="HandMeshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketHandPrefab"/>
+	<property name="Material" value="metal"/>
+	<property name="HoldType" value="3"/>
+	<property name="Stacknumber" value="1"/> <!-- STK explosives -->
+	<property name="EconomicValue" value="0"/>
+	<property name="Weight" value="0"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="0,0"/>
+		<property name="BlockDamage" value="0,0"/> <!-- this is not working yet, it uses damage from Action1 -->
+	</property>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="4"/> <!-- which Prefab/particle is used -->
+		<property name="Explosion.RadiusBlocks" value="1"/> <!-- damage radius for blocks -->
+		<property name="Explosion.BlockDamage" value="0"/> <!-- damage for blocks in the center of the explosion -->
+		<property name="Explosion.RadiusEntities" value="1"/> <!-- damage radius for entities -->
+		<property name="Explosion.EntityDamage" value="0"/> <!-- damage for entities in the center of the explosion. Zombies take 2x this damage. -->
+		<property name="Velocity" value="50"/>
+		<property name="FlyTime" value="1.2"/>
+		<property name="LifeTime" value="8"/>
+	</property>
+	<property name="CraftingSkillGroup" value="ammoCrafting"/>
+	<property name="Group" value="Ammo/Weapons"/>
+</item>
+
+<!-- Bow/Crossbow Weapon Unload -->
+<item id="2374" name="unloadgun3">
+	<property name="CustomIcon" value="unloadgun2"/>
+	<property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/Arrow"/>
+	<property name="DropMeshfile" value="Items/Misc/arrow_dropped"/>
+	<property name="HandMeshfile" value="Items/Misc/arrow_hand"/>
+	<property name="HoldType" value="32"/>
+	<property name="Material" value="wood"/>
+	<property name="Stacknumber" value="1"/> <!-- STK ammo -->
+	<property name="Weight" value="0"/>
+	<property name="FuelValue" value="0"/>
+	<property name="EconomicValue" value="0"/>
+	<property class="Action1">
+		<property name="Class" value="Projectile"/>
+		<property name="Explosion.ParticleIndex" value="0"/> <!-- no expl. -->
+		<property name="Velocity" value="47"/>
+		<property name="FlyTime" value="0"/>
+		<property name="Gravity" value="-4.7"/>
+		<property name="LifeTime" value="12"/>
+		<property name="DamageBonus.head" value="5"/>
+		<property name="DamageBonus.glass" value="1"/>
+		<property name="DamageBonus.wood" value="0.1"/>
+		<property name="DamageBonus.earth" value="0"/>
+		<property name="DamageBonus.metal" value="0"/>
+		<property name="DamageBonus.cloth" value="0"/>
+	</property>
+	<property name="Group" value="Ammo/Weapons,Basics"/>
+	<property class="Attributes">
+		<property name="GetQualityFromWeapon" value="true"/>
+		<property name="EntityDamage" value="0,0"/>
+		<property name="BlockDamage" value="0,0"/>
+	</property>
+	<property name="CraftingSkillGroup" value="ammoCrafting"/>
 </item>
 
 <!-- <item id="2372" name="flamethrower">

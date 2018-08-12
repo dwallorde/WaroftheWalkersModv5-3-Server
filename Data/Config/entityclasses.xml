@@ -136,8 +136,8 @@
 	<property name="WanderSpeed" value="0.08"/>
 	<property name="ApproachSpeed" value="0.2"/>
 	<property name="NightWanderSpeed" value="0.08"/>
-	<property name="NightApproachSpeed" value="0.6"/>
-	<property name="PanicSpeed" value="0.55"/>
+	<property name="NightApproachSpeed" value="0.2"/>
+	<property name="PanicSpeed" value="0.25"/>
 
 	<property name="CanClimbLadders" value="true"/>
 	<property name="IsEnemyEntity" value="true"/>
@@ -214,6 +214,15 @@
 	<property name="ChestExplosionDamageMultiplier" value="1"/>
 </entity_class>
 
+<entity_class name="zombieHordeTemplateMale" extends="zombieTemplateMale">
+	<property name="MaxHealth" value="250"/>
+	<property name="WanderSpeed" value="0.08"/>
+	<property name="ApproachSpeed" value="0.2"/>
+	<property name="NightWanderSpeed" value="0.08"/>
+	<property name="NightApproachSpeed" value="0.6"/>
+	<property name="PanicSpeed" value="0.55"/>
+</entity_class>
+
 <!-- Added V5.3: zombieWight -->
 <entity_class name="zombieWight" extends="zombieTemplateMale">
 	<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll"/>
@@ -228,6 +237,31 @@
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="850"/>
 	<property name="ExperienceGain" value="1700"/>
+	<property name="LootListOnDeath" value="61"/>
+	<property name="HeadDismemberThreshold" value="0.2"/>
+	<property name="LowerLegDismemberThreshold" value="0.105"/>
+	<property name="UpperLegDismemberThreshold" value="0.105"/>
+	<property name="LowerArmDismemberThreshold" value="0.063"/>
+	<property name="UpperArmDismemberThreshold" value="0.063"/>
+	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_rad"/>-->
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieWight Horde -->
+<entity_class name="zombieWightHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="2"/>
+	<property name="HandItem" value="handZombieCop"/>
+	<property name="MaxHealth" value="850"/>
+	<property name="ExperienceGain" value="1900"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -255,6 +289,33 @@
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="1000"/>
 	<property name="ExperienceGain" value="2000"/>
+	<property name="LootListOnDeath" value="61"/>
+	<property name="HeadDismemberThreshold" value="0.2"/>
+	<property name="LowerLegDismemberThreshold" value="0.105"/>
+	<property name="UpperLegDismemberThreshold" value="0.105"/>
+	<property name="LowerArmDismemberThreshold" value="0.063"/>
+	<property name="UpperArmDismemberThreshold" value="0.063"/>
+	<!--<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/> -->
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieWightRadiated Horde -->
+<entity_class name="zombieWightRadiatedHorde" extends="zombieHordeTemplateMale">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/zombieStandardFeralRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Feral_Zombie/zombieferalroam"/>
+	<property name="SoundAlert" value="Enemies/Feral_Zombie/zombieferalalert"/>
+	<property name="SoundAttack" value="Enemies/Feral_Zombie/zombieferalattack"/>
+	<property name="SoundHurt" value="Enemies/Feral_Zombie/zombieferalpain"/>
+	<property name="SoundDeath" value="Enemies/Feral_Zombie/zombieferaldeath"/>
+	<property name="SoundSense" value="Enemies/Feral_Zombie/zombieferalsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Feral_Zombie/zombieferalfootstep"/>
+	<property name="WalkType" value="2"/>
+	<property name="HandItem" value="handZombieCop"/>
+	<property name="MaxHealth" value="1000"/>
+	<property name="ExperienceGain" value="2200"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -500,6 +561,27 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieBoeHorde -->
+<entity_class name="zombieBoeHorde" extends="zombieHordeTemplateMale">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<!-- <property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/> -->
+	<property name="LootListOnDeath" value="38"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieBoeRadiated -->
 <entity_class name="zombieBoeRadiated" extends="zombieBoe">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -515,6 +597,29 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="161"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieBoeRadiatedHorde -->
+<entity_class name="zombieBoeRadiatedHorde" extends="zombieBoeHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" value="Zombies/zombieStandardBoeRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -564,13 +669,39 @@
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="450"/>
 	<property name="HandItem" value="handZombieFootballPlayer"/>
-	<property name="WanderSpeed" value="0.75"/>
-	<property name="ApproachSpeed" value="1.15"/>
-	<property name="NightWanderSpeed" value="0.75"/>
-	<property name="NightApproachSpeed" value="1.15"/>
+	<property name="WanderSpeed" value="0.5"/>
+	<property name="ApproachSpeed" value="0.75"/>
+	<property name="NightWanderSpeed" value="0.5"/>
+	<property name="NightApproachSpeed" value="0.75"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="ExperienceGain" value="900"/>
+	<property name="LootListOnDeath" value="78"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieBoeFeralRadiatedHorde -->
+<entity_class name="zombieFootballPlayerHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardFootballRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<!-- <property name="WalkType" value="6"/> -->
+	<property name="WalkType" value="7"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="HandItem" value="handZombieFootballPlayer"/>
+	<property name="WanderSpeed" value="0.75"/>
+	<property name="ApproachSpeed" value="1.25"/>
+	<property name="NightWanderSpeed" value="0.75"/>
+	<property name="NightApproachSpeed" value="1.25"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="ExperienceGain" value="1100"/>
 	<property name="LootListOnDeath" value="78"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -688,6 +819,35 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieFemaleFatHorde -->
+<entity_class name="zombieFemaleFatHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardFatLadyZRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="1"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="PhysicsBody" value="zombieFat"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+
+	<property name="SleeperSmellWakeThreshold" value="20,50"/>
+	<property name="SmellAlertThreshold" value="20"/> <!-- for awake zombies -->
+
+	<property name="LootListOnDeath" value="85"/>
+	<property name="TintMaterial2" value="64,63,62"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieFemaleFatRadiated -->
 <entity_class name="zombieFemaleFatRadiated" extends="zombieFemaleFat">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -695,6 +855,17 @@
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="LootListOnDeath" value="85"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieFemaleFatRadiatedHorde -->
+<entity_class name="zombieFemaleFatRadiatedHorde" extends="zombieFemaleFatHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieStrongFeral"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="LootListOnDeath" value="85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -736,12 +907,42 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieJoeHorde -->
+<entity_class name="zombieJoeHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="5"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="TintMaterial2" value="79,40,26"/>
+	
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieJoeRadiated -->
 <entity_class name="zombieJoeRadiated" extends="zombieJoe">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="5"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieJoeRadiatedHorde -->
+<entity_class name="zombieJoeRadiatedHorde" extends="zombieJoeHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
@@ -803,6 +1004,31 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieMoeHorde -->
+<entity_class name="zombieMoeHorde" extends="zombieHordeTemplateMale">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="Mesh" value="Zombies/zombieStandardMoeRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="1"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="Weight" value="70"/>
+	<property name="PushFactor" value="20"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="LootListOnDeath" value="38"/>
+	<property name="TintMaterial2" value="41,38,34"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieMoeRadiated -->
 <entity_class name="zombieMoeRadiated" extends="zombieMoe">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -810,6 +1036,18 @@
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="161"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieMoeRadiatedHorde -->
+<entity_class name="zombieMoeRadiatedHorde" extends="zombieMoeHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -863,6 +1101,28 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieArleneHorde -->
+<entity_class name="zombieArleneHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardArleneRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="3"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="TintMaterial1" value="56,50,40"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieArleneRadiated -->
 <entity_class name="zombieArleneRadiated" extends="zombieArlene">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -870,6 +1130,18 @@
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieArleneRadiatedHorde -->
+<entity_class name="zombieArleneRadiatedHorde" extends="zombieArleneHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -922,6 +1194,27 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieScreamerHorde -->
+<entity_class name="zombieScreamerHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardScreamerRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemalescoutroam"/>
+	<property name="SoundAlert" value="Enemies/Scout_Zombie/zombiefemalescoutalert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemalescoutattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalescoutpain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemalescoutdeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalescoutsense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="3"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="200"/>
+	<property name="ExperienceGain" value="400"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieScreamerRadiated -->
 <entity_class name="zombieScreamerRadiated" extends="zombieScreamer">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -929,6 +1222,18 @@
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="350"/>
 	<property name="ExperienceGain" value="700"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieScreamerRadiatedHorde -->
+<entity_class name="zombieScreamerRadiatedHorde" extends="zombieScreamerHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="350"/>
+	<property name="ExperienceGain" value="900"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -982,8 +1287,42 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieDarleneHorde -->
+<entity_class name="zombieDarleneHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardDarleneRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="3"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="500"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="TintMaterial2" value="32,24,20"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieDarleneRadiated -->
 <entity_class name="zombieDarleneRadiated" extends="zombieDarlene">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieDarleneRadiatedHorde -->
+<entity_class name="zombieDarleneRadiatedHorde" extends="zombieDarleneHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
@@ -1042,8 +1381,42 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieMarleneHorde -->
+<entity_class name="zombieMarleneHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardMarleneRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female2/zombiefemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female2/zombiefemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female2/zombiefemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female2/zombiefemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female2/zombiefemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female2/zombiefemale2sense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="5"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="500"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="TintMaterial2" value="41,25,25"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieMarleneRadiated -->
 <entity_class name="zombieMarleneRadiated" extends="zombieMarlene">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieMarleneRadiatedHorde -->
+<entity_class name="zombieMarleneRadiatedHorde" extends="zombieMarleneHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
@@ -1094,8 +1467,33 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieYoHorde -->
+<entity_class name="zombieYoHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardYoRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="5"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="TintMaterial3" value="23,17,13"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieYoRadiated -->
 <entity_class name="zombieYoRadiated" extends="zombieYo">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieYoRadiatedHorde -->
+<entity_class name="zombieYoRadiatedHorde" extends="zombieYoHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
@@ -1145,12 +1543,37 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieSteveHorde -->
+<entity_class name="zombieSteveHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<!-- <property name="WalkType" value="6"/> -->
+	<property name="WalkType" value="7"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="500"/>
+	<property name="RootMotion" value="true"/>
+	<property name="TintMaterial2" value="36,38,45"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieSteveRadiated -->
 <entity_class name="zombieSteveRadiated" extends="zombieSteve">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSteveRadiatedHorde -->
+<entity_class name="zombieSteveRadiatedHorde" extends="zombieSteveHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1187,8 +1610,8 @@
 	<property name="Mesh" value="Zombies/zombieStandardSteveRagdoll"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="HandItem" value="handZombie02"/>
-	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="MaxHealth" value="150"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="Class" value="EntityZombieCrawl"/>
 	<property name="WalkType" value="4"/>
 	<property name="CanClimbLadders" value="false"/>
@@ -1203,8 +1626,8 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie02"/>
-	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1228,8 +1651,8 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombie02Feral"/>
-	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="MaxHealth" value="800"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1251,9 +1674,9 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="500"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="250" />
+	<property name="MaxHealth" value="150"/>
+	<property name="ExperienceGain" value="300"/>
 </entity_class>
 
 <!-- Added V5.3: zombieDarleneCrawlerRadiated -->
@@ -1262,10 +1685,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="400" />
+	<property name="MaxHealth" value="250" />
 </entity_class>
 
 <!-- Added V5.3: zombieDarleneCrawlerFeral -->
@@ -1288,12 +1711,12 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="1000" />
+	<property name="MaxHealth" value="800" />
 </entity_class>
 
 <entity_class name="zombieArleneCrawler" extends="zombieTemplateMale">
@@ -1310,9 +1733,9 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="250" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <!-- Added V5.3: zombieArleneCrawlerRadiated -->
@@ -1321,10 +1744,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="400" />
+	<property name="MaxHealth" value="250" />
 </entity_class>
 
 <!-- Added V5.3: zombieArleneCrawlerFeral -->
@@ -1347,12 +1770,12 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="1000" />
+	<property name="MaxHealth" value="800" />
 </entity_class>
 
 <entity_class name="zombieMoeCrawler" extends="zombieTemplateMale">
@@ -1369,9 +1792,9 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="400"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="450" />
+	<property name="MaxHealth" value="200" />
 </entity_class>
 
 <!-- Added V5.3: zombieMoeCrawlerRadiated -->
@@ -1380,10 +1803,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="800"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="600" />
+	<property name="MaxHealth" value="400" />
 </entity_class>
 
 <!-- Added V5.3: zombieMoeCrawlerFeral -->
@@ -1406,12 +1829,12 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2000"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="1200" />
+	<property name="MaxHealth" value="1000" />
 </entity_class>
 
 <entity_class name="zombieJoeCrawler" extends="zombieTemplateMale">
@@ -1422,9 +1845,9 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="250" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <!-- Added V5.3: zombieJoeCrawlerRadiated -->
@@ -1433,10 +1856,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="400" />
+	<property name="MaxHealth" value="250" />
 </entity_class>
 
 <!-- Added V5.3: zombieJoeCrawlerFeral -->
@@ -1459,12 +1882,12 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="1000" />
+	<property name="MaxHealth" value="800" />
 </entity_class>
 
 <entity_class name="zombieBoeCrawler" extends="zombieTemplateMale">
@@ -1481,9 +1904,9 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="300"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="250" />
+	<property name="MaxHealth" value="150" />
 </entity_class>
 
 <!-- Added V5.3: zombieBoeCrawlerRadiated -->
@@ -1492,10 +1915,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardBoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="400" />
+	<property name="MaxHealth" value="250" />
 </entity_class>
 
 <!-- Added V5.3: zombieBoeCrawlerFeral -->
@@ -1518,12 +1941,12 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardBoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="1600"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="RootMotion"   value="true" />
-	<property name="MaxHealth" value="1000" />
+	<property name="MaxHealth" value="800" />
 </entity_class>
 
 <entity_class name="zombieBusinessMan" extends="zombieTemplateMale">
@@ -1539,6 +1962,20 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieBusinessManHorde -->
+<entity_class name="zombieBusinessManHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardSuitRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="7"/>
+	<property name="RootMotion" value="true"/>
+	<property name="MaxHealth" value="250" />
+	<property name="ExperienceGain" value="700"/>
+	<property name="TintMaterial1" value="36,38,45"/>
+	<property name="LootListOnDeath" value="89"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieBusinessManRadiated -->
 <entity_class name="zombieBusinessManRadiated" extends="zombieBusinessMan">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -1546,6 +1983,18 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="165"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieBusinessManRadiatedHorde -->
+<entity_class name="zombieBusinessManRadiatedHorde" extends="zombieBusinessManHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="165"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1599,8 +2048,42 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieSnowHorde -->
+<entity_class name="zombieSnowHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardSnowRagdoll"/>
+	<property name="LootListOnDeath" value="66"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
+	<property name="SoundAlert" value="Enemies/Snow_Zombie_Male/zombiemalesnowalert"/>
+	<property name="SoundAttack" value="Enemies/Snow_Zombie_Male/zombiemalesnowattack"/>
+	<property name="SoundHurt" value="Enemies/Snow_Zombie_Male/zombiemalesnowpain"/>
+	<property name="SoundDeath" value="Enemies/Snow_Zombie_Male/zombiemalesnowdeath"/>
+	<property name="SoundSense" value="Enemies/Snow_Zombie_Male/zombiemalesnowsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.2: zombieSnowRadiated -->
 <entity_class name="zombieSnowRadiated" extends="zombieSnow">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff80"/> <!-- To Do V5.2 New Buff 50% Weaker -->
+	<property name="HandItem" value="handZombieStrongFeral"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1200"/>
+	<property name="LootListOnDeath" value="166"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSnowRadiatedHorde -->
+<entity_class name="zombieSnowRadiatedHorde" extends="zombieSnowHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff80"/> <!-- To Do V5.2 New Buff 50% Weaker -->
 	<property name="HandItem" value="handZombieStrongFeral"/>
@@ -1653,11 +2136,40 @@
 	<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
 	<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="WanderSpeed" value="0.08"/>
+	<!-- <property name="WanderSpeed" value="0.08"/>
 	<property name="ApproachSpeed" value="0.2"/>
 	<property name="NightWanderSpeed" value="0.08"/>
 	<property name="NightApproachSpeed" value="1.1"/>
-	<property name="PanicSpeed" value="1.2"/>
+	<property name="PanicSpeed" value="1.2"/> -->
+	<property name="ExperienceGain" value="500"/>
+	<property name="HeadDismemberThreshold" value="0"/>
+	<property name="LowerLegDismemberThreshold" value="0"/>
+	<property name="UpperLegDismemberThreshold" value="0"/>
+	<property name="LowerArmDismemberThreshold" value="0"/>
+	<property name="UpperArmDismemberThreshold" value="0"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0"/>
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSpiderHorde -->
+<entity_class name="zombieSpiderHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardSpiderRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="CanClimbVertical" value="true"/>
+	<property name="WalkType" value="8"/>
+	<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam"/>
+	<property name="SoundAlert" value="Enemies/Spider_Zombie/spideralert"/>
+	<property name="SoundAttack" value="Enemies/Spider_Zombie/spiderattack"/>
+	<property name="SoundDeath" value="Enemies/Spider_Zombie/spiderdeath"/>
+	<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
+	<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
+	<property name="MaxHealth" value="250"/>
 	<property name="ExperienceGain" value="500"/>
 	<property name="HeadDismemberThreshold" value="0"/>
 	<property name="LowerLegDismemberThreshold" value="0"/>
@@ -1673,6 +2185,18 @@
 
 <!-- Added V5.3: zombieSpiderRadiated -->
 <entity_class name="zombieSpiderRadiated" extends="zombieSpider">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombie02Feral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="164"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSpiderRadiatedHorde -->
+<entity_class name="zombieSpiderRadiatedHorde" extends="zombieSpiderHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie02Feral"/>
@@ -1724,6 +2248,24 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieBurntHorde -->
+<entity_class name="zombieBurntHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll"/>
+	<property name="WalkType" value="7"/>
+	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
+	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
+	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
+	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
+	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
+	<property name="HandItem" value="handZombieBurning"/>
+	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieBurntRadiated -->
 <entity_class name="zombieBurntRadiated" extends="zombieBurnt">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -1741,6 +2283,28 @@
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="161"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieBurntRadiatedHorde -->
+<entity_class name="zombieBurntRadiatedHorde" extends="zombieBurntHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/ZombieStandardBurntRagdoll"/>
+	<property name="WalkType" value="7"/>
+	<property name="SoundRandom" value="Enemies/Burnt_Zombie/zombieburntroam"/>
+	<property name="SoundAlert" value="Enemies/Burnt_Zombie/zombieburntalert"/>
+	<property name="SoundAttack" value="Enemies/Burnt_Zombie/zombieburntattack"/>
+	<property name="SoundHurt" value="Enemies/Burnt_Zombie/zombieburntpain"/>
+	<property name="SoundDeath" value="Enemies/Burnt_Zombie/zombieburntdeath"/>
+	<property name="SoundSense" value="Enemies/Burnt_Zombie/zombieburntsense"/>
+	<property name="SoundFootstepModifier" value="Enemies/Burnt_Zombie/zombieburntfootstep"/>
+	<property name="HandItem" value="handZombieBurning"/>
+	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1816,8 +2380,42 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieNurseHorde -->
+<entity_class name="zombieNurseHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardNurseRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="7"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="LootListOnDeath" value="21"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieNurseRadiated -->
 <entity_class name="zombieNurseRadiated" extends="zombieNurse">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="800"/>
+	<property name="LootListOnDeath" value="167"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieNurseRadiatedHorde -->
+<entity_class name="zombieNurseRadiatedHorde" extends="zombieNurseHorde">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
@@ -1879,6 +2477,31 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieFatHawaiianHorde -->
+<entity_class name="zombieFatHawaiianHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardHawaiianRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+	<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+	<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="1"/>
+	<property name="HandItem" value="handZombieCop"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="PhysicsBody" value="zombieFat"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="LootListOnDeath" value="38"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieFatHawaiianRadiated -->
 <entity_class name="zombieFatHawaiianRadiated" extends="zombieFatHawaiian">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -1886,6 +2509,18 @@
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="LootListOnDeath" value="161"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieFatHawaiianRadiatedHorde -->
+<entity_class name="zombieFatHawaiianRadiatedHorde" extends="zombieFatHawaiianHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="LootListOnDeath" value="161"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1972,6 +2607,61 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieFatCopHorde -->
+<entity_class name="zombieFatCopHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardCopRagdoll"/>
+	<property name="Class" value="EntityZombieCop"/>
+	<property name="HandItem" value="handZombieCop"/>
+	<property name="WalkType" value="1"/>
+	<property name="RightHandJointName" value="Jaw"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="PhysicsBody" value="zombieFat"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="MaxHealth" value="850"/>
+	<property name="ExperienceGain" value="1900"/>
+	<property name="Weight" value="70"/>
+	<property name="PushFactor" value="20"/>
+	<property name="LootListOnDeath" value="17"/>
+	<property name="AITask-1" value="BreakDoor"/>
+	<property name="AITask-2" value="BreakBlock"/>
+	<property name="AITask-3" value="RangedAttackTarget" param1="1" param2="5"/>
+	<property name="AITask-4" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
+	<property name="AITask-5" value="ApproachSpot"/>
+	<property name="AITask-6" value="Wander"/>
+	<property name="SoundRandom" value="Enemies/Acid_Puking_Hulk/hulkroam"/>
+	<property name="SoundAlert" value="Enemies/Acid_Puking_Hulk/hulkalert"/>
+	<property name="SoundAttack" value="Enemies/Acid_Puking_Hulk/hulkattack"/>
+	<property name="SoundHurt" value="Enemies/Acid_Puking_Hulk/hulkpain"/>
+	<property name="SoundDeath" value="Enemies/Acid_Puking_Hulk/hulkdeath"/>
+	<property name="SoundSense" value="Enemies/Acid_Puking_Hulk/hulksense"/>
+	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
+	<property name="Explosion.ParticleIndex" value="8"/>
+	<property name="Explosion.RadiusBlocks" value="5"/>
+	<property name="Explosion.RadiusEntities" value="6"/>
+	<property name="Explosion.BlockDamage" value="500"/>
+	<property name="Explosion.EntityDamage" value="150"/>
+	<property name="Explosion.DamageBonus.earth" value="0"/>
+	<property name="HeadDismemberBonusChance" value="0.08"/>
+	<property name="HeadDismemberThreshold" value="0"/>
+	<property name="LowerLegDismemberThreshold" value="0"/>
+	<property name="UpperLegDismemberThreshold" value="0"/>
+	<property name="LowerArmDismemberThreshold" value="0"/>
+	<property name="UpperArmDismemberThreshold" value="0"/>
+	<property name="LegCrawlerThreshold" value="0"/>
+	<property name="LegCrippleThreshold" value="0"/>
+	<property name="KnockdownProneDamageThreshold" value="0"/>
+	<property name="KnockdownKneelDamageThreshold" value="0"/>
+	<property name="LegsExplosionDamageMultiplier" value="2"/> <!-- volatile so vulnerable to land mines/explosives -->
+	<property name="ArmsExplosionDamageMultiplier" value="2"/>
+	<property name="HeadExplosionDamageMultiplier" value="2"/>
+	<property name="ChestExplosionDamageMultiplier" value="2"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieFatCopRadiated -->
 <entity_class name="zombieFatCopRadiated" extends="zombieFatCop">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -1979,6 +2669,20 @@
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1000"/>
 	<property name="ExperienceGain" value="2000"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="Explosion.BlockDamage" value="850"/>
+	<property name="Explosion.EntityDamage" value="250"/>
+	<property name="LootListOnDeath" value="168"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieFatCopRadiatedHorde -->
+<entity_class name="zombieFatCopRadiatedHorde" extends="zombieFatCopHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="MaxHealth" value="1000"/>
+	<property name="ExperienceGain" value="2200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="Explosion.BlockDamage" value="850"/>
 	<property name="Explosion.EntityDamage" value="250"/>
@@ -2022,6 +2726,17 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieMaleHazmatHorde -->
+<entity_class name="zombieMaleHazmatHorde" extends="zombieBoeHorde">
+	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
+	<property name="HandItem" value="handZombieHazMat"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="LootListOnDeath" value="65"/>
+	<property name="WalkType" value="7"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieMaleHazmatRadiated -->
 <entity_class name="zombieMaleHazmatRadiated" extends="zombieMaleHazmat">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2030,6 +2745,20 @@
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="184"/>
+	<property name="WalkType" value="7"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieMaleHazmatRadiatedHorde -->
+<entity_class name="zombieMaleHazmatRadiatedHorde" extends="zombieMaleHazmatHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
+	<property name="HandItem" value="handZombieHazMat"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="184"/>
 	<property name="WalkType" value="7"/>
@@ -2090,12 +2819,47 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieUtilityWorkerHorde -->
+<entity_class name="zombieUtilityWorkerHorde" extends="zombieHordeTemplateMale">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" value="Zombies/zombieStandardWorkerRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<!-- <property name="WalkType" value="6"/> -->
+	<property name="WalkType" value="7"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="900"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HandItem" value="handZombieWorker"/>
+	<property name="LootListOnDeath" value="74"/>
+	<property name="TintMaterial2" value="41,41,41"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieUtilityWorkerRadiated -->
 <entity_class name="zombieUtilityWorkerRadiated" extends="zombieUtilityWorker">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="HandItem" value="handZombieWorkerFeral"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="169"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieUtilityWorkerRadiatedHorde -->
+<entity_class name="zombieUtilityWorkerRadiatedHorde" extends="zombieUtilityWorkerHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="169"/>
@@ -2149,12 +2913,45 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieSoldierHorde -->
+<entity_class name="zombieSoldierHorde" extends="zombieHordeTemplateMale">
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Male2/zombiemale2roam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Male2/zombiemale2alert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Male2/zombiemale2attack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Male2/zombiemale2pain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Male2/zombiemale2death"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Male2/zombiemale2sense"/>
+	<property name="Mesh" value="Zombies/zombieStandardSoldierRagdoll"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="2"/>
+	<property name="MaxHealth" value="850"/>
+	<property name="ExperienceGain" value="1900"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="HandItem" value="handZombieWorker"/>
+	<property name="LootListOnDeath" value="73"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieSoldierRadiated -->
 <entity_class name="zombieSoldierRadiated" extends="zombieSoldier">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="1000"/>
 	<property name="ExperienceGain" value="2000"/>
+	<property name="HandItem" value="handZombieCopFeral"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="170"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSoldierRadiatedHorde -->
+<entity_class name="zombieSoldierRadiatedHorde" extends="zombieSoldierHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="MaxHealth" value="1000"/>
+	<property name="ExperienceGain" value="2200"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="170"/>
@@ -2202,6 +2999,21 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieSkateboarderHorde -->
+<entity_class name="zombieSkateboarderHorde" extends="zombieBoeHorde">
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll"/>
+	<property name="SoundRandom" value="zombiemaleroam"/>
+	<property name="SoundAlert" value="zombiemalealert"/>
+	<property name="SoundAttack" value="zombiemaleattack"/>
+	<property name="SoundHurt" value="zombiemalepain"/>
+	<property name="SoundDeath" value="zombiemaledeath"/>
+	<property name="SoundSense" value="zombiemalesense"/>
+	<property name="LootListOnDeath" value="80"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieSkateboarderRadiated -->
 <entity_class name="zombieSkateboarderRadiated" extends="zombieSkateboarder">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2209,6 +3021,18 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="171"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieSkateboarderRadiatedHorde -->
+<entity_class name="zombieSkateboarderRadiatedHorde" extends="zombieSkateboarderHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="171"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2263,6 +3087,29 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieCheerleaderHorde -->
+<entity_class name="zombieCheerleaderHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardCheerleaderRagdoll"/>
+	<property name="SoundRandom" value="Enemies/Base_Zombie_Female/zombiefemaleroam"/>
+	<property name="SoundAlert" value="Enemies/Base_Zombie_Female/zombiefemalealert"/>
+	<property name="SoundAttack" value="Enemies/Base_Zombie_Female/zombiefemaleattack"/>
+	<property name="SoundHurt" value="Enemies/Base_Zombie_Female/zombiefemalepain"/>
+	<property name="SoundDeath" value="Enemies/Base_Zombie_Female/zombiefemaledeath"/>
+	<property name="SoundSense" value="Enemies/Base_Zombie_Female/zombiefemalesense"/>
+	<property name="AvatarController" value="AvatarZombie01Controller"/>
+	<property name="ModelType" value="Standard"/>
+	<property name="WalkType" value="3"/>
+	<property name="HandItem" value="handZombie"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="CanClimbLadders" value="true"/>
+	<property name="RootMotion" value="true"/>
+	<property name="HasDeathAnim" value="true"/>
+	<property name="LootListOnDeath" value="79"/>
+	<property name="TintMaterial2" value="83,79,64"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieCheerleaderRadiated -->
 <entity_class name="zombieCheerleaderRadiated" extends="zombieCheerleader">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2270,6 +3117,18 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="172"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieCheerleaderRadiatedHorde -->
+<entity_class name="zombieCheerleaderRadiatedHorde" extends="zombieCheerleaderHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="172"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2311,6 +3170,16 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieOldTimerHorde -->
+<entity_class name="zombieOldTimerHorde" extends="zombieBoeHorde">
+	<property name="Mesh" value="Zombies/zombieStandardOldTimerRagdoll"/>
+	<property name="WalkType" value="3"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="LootListOnDeath" value="81"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieOldTimerRadiated -->
 <entity_class name="zombieOldTimerRadiated" extends="zombieOldTimer">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2318,6 +3187,19 @@
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="LootListOnDeath" value="38"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="173"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieOldTimerRadiatedHorde -->
+<entity_class name="zombieOldTimerRadiatedHorde" extends="zombieOldTimerHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="HandItem" value="handZombieFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="173"/>
@@ -2363,6 +3245,17 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieBikerHorde -->
+<entity_class name="zombieBikerHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="450"/>
+	<property name="ExperienceGain" value="1100"/>
+	<property name="LootListOnDeath" value="83"/>
+	<property name="WalkType" value="7"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieBikerRadiated -->
 <entity_class name="zombieBikerRadiated" extends="zombieBiker">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2371,6 +3264,20 @@
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
 	<property name="ExperienceGain" value="1200"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="185"/>
+	<property name="WalkType" value="7"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieBikerRadiatedHorde -->
+<entity_class name="zombieBikerRadiatedHorde" extends="zombieBikerHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="600"/>
+	<property name="ExperienceGain" value="1400"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="185"/>
 	<property name="WalkType" value="7"/>
@@ -2421,6 +3328,19 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieFarmerHorde -->
+<entity_class name="zombieFarmerHorde" extends="zombieHordeTemplateMale">
+	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
+	<property name="HandItem" value="handZombieStrong"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="500"/>
+	<property name="LootListOnDeath" value="85"/>
+	<!-- <property name="WalkType" value="6"/> -->
+	<property name="WalkType" value="7"/>
+	<property name="TintMaterial1" value="84,84,84"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieFarmerRadiated -->
 <entity_class name="zombieFarmerRadiated" extends="zombieFarmer">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2429,6 +3349,22 @@
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<!-- <property name="WalkType" value="6"/> -->
+	<property name="WalkType" value="7"/>
+	<property name="TintMaterial1" value="84,84,84"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="163"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieFarmerRadiatedHorde -->
+<entity_class name="zombieFarmerRadiatedHorde" extends="zombieFarmerHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
+	<property name="HandItem" value="handZombieStrongFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="TintMaterial1" value="84,84,84"/>
@@ -2481,6 +3417,16 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- Added V5.3.1: zombieStripperHorde -->
+<entity_class name="zombieStripperHorde" extends="zombieDarleneHorde">
+	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
+	<property name="HandItem" value="handZombieStripper"/>
+	<property name="MaxHealth" value="250"/>
+	<property name="ExperienceGain" value="700"/>
+	<property name="LootListOnDeath" value="84"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
 <!-- Added V5.3: zombieStripperRadiated -->
 <entity_class name="zombieStripperRadiated" extends="zombieStripper">
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
@@ -2489,6 +3435,19 @@
 	<property name="HandItem" value="handZombieStripperFeral"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="ExperienceGain" value="800"/>
+	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
+	<property name="LootListOnDeath" value="174"/>
+	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
+</entity_class>
+
+<!-- Added V5.3.1: zombieStripperRadiatedHorde -->
+<entity_class name="zombieStripperRadiatedHorde" extends="zombieStripperHorde">
+	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
+	<property name="Buffs" value="zombieRadiatedBuff40"/>
+	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
+	<property name="HandItem" value="handZombieStripperFeral"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1000"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="174"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2953,6 +3912,7 @@
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
+<!-- A11 Snow Zombies -->
 <entity_class name="zombieFrigidHunter" extends="zombieTemplateMale">
 	<!-- We are using the Animal Animation, since the BipedAnimation is a bit wonky with the hit animation -->
 	<property name="AvatarController" value="AnimationSDX, Mods" />
@@ -2967,11 +3927,11 @@
 	<property name="AnimationDeath" value="die" />
 	<property name="AnimationRun" value="run" />
 	<property name="AnimationWalk" value="walk" />
-	<property name="WanderSpeed" value="0.08"/>
-	<property name="ApproachSpeed" value="0.2"/>
-	<property name="NightWanderSpeed" value="0.08"/>
-	<property name="NightApproachSpeed" value="1.1"/>
-	<property name="PanicSpeed" value="0.55"/>
+	<property name="WanderSpeed" value="0.1"/>
+	<property name="ApproachSpeed" value="0.6"/>
+	<property name="NightWanderSpeed" value="0.1"/>
+	<property name="NightApproachSpeed" value="1.2"/>
+	<property name="PanicSpeed" value="0.8"/>
     <property name="HasRagdoll" value="false" />
     <property name="RootMotion" value="false" />
 	<!-- AI Stuff -->
@@ -3088,11 +4048,11 @@
 	<property name="AnimationDeath" value="die" />
 	<property name="AnimationRun" value="run" />
 	<property name="AnimationWalk" value="walk" />
-	<property name="WanderSpeed" value="0.08"/>
-	<property name="ApproachSpeed" value="0.2"/>
-	<property name="NightWanderSpeed" value="0.08"/>
-	<property name="NightApproachSpeed" value="1.1"/>
-	<property name="PanicSpeed" value="0.55"/>
+	<property name="WanderSpeed" value="0.1"/>
+	<property name="ApproachSpeed" value="0.6"/>
+	<property name="NightWanderSpeed" value="0.1"/>
+	<property name="NightApproachSpeed" value="1.2"/>
+	<property name="PanicSpeed" value="0.8"/>
     <property name="HasRagdoll" value="false" />
     <property name="RootMotion" value="false" />
 	<!-- AI Stuff -->

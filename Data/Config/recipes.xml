@@ -190,49 +190,49 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="9mmHollowPointBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="9mmHollowPointBullet" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="15">
     <ingredient name="HollowPointBulletTip" count="1"/>
     <ingredient name="gunPowder" count="1"/>
     <ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="32mmBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="32mmBullet" count="1" craft_area="ammoWorkstation" craft_tool="calipers" craft_exp_gain="15">
     <ingredient name="bulletTip" count="1"/>
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="44MagBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="10">
+<recipe name="44MagBullet" count="1" craft_area="ammoWorkstation" craft_tool="calipers" craft_exp_gain="10">
 	<ingredient name="bulletTip" count="1"/>
 	<ingredient name="gunPowder" count="3"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="44HollowPointMagBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="44HollowPointMagBullet" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="15">
     <ingredient name="HollowPointBulletTip" count="1"/>
     <ingredient name="gunPowder" count="4"/>
     <ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="556mmBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="10">
+<recipe name="556mmBullet" count="1" craft_area="ammoWorkstation" craft_tool="calipers" craft_exp_gain="10">
     <ingredient name="bulletTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
     <ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="556mmNATOBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="556mmNATOBullet" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="15">
 	<ingredient name="HollowPointBulletTip" count="1"/>
     <ingredient name="gunPowder" count="3"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="762mmBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="762mmBullet" count="1" craft_area="ammoWorkstation" craft_tool="calipers" craft_exp_gain="15">
 	<ingredient name="bulletTip" count="1"/>
 	<ingredient name="gunPowder" count="3"/>
 	<ingredient name="bulletCasing" count="1"/>
 </recipe>
 
-<recipe name="762mmHollowPointBullet" count="1" craft_area="ammoWorkstation" craft_exp_gain="20">
+<recipe name="762mmHollowPointBullet" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="20">
     <ingredient name="HollowPointBulletTip" count="1"/>
     <ingredient name="gunPowder" count="2"/>
     <ingredient name="bulletCasing" count="1"/>
@@ -244,13 +244,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="paper" count="1"/>
 </recipe>
 
-<recipe name="shotgunSlug" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="shotgunSlug" count="1" craft_area="ammoWorkstation" craft_tool="calipers" craft_exp_gain="15">
 	<ingredient name="bulletTip" count="5"/>
 	<ingredient name="gunPowder" count="4"/>
 	<ingredient name="bulletCasing" count="3"/>
 </recipe>
 
-<recipe name="IncendiaryShotgunSlug" count="1" craft_area="ammoWorkstation" craft_exp_gain="20">
+<recipe name="IncendiaryShotgunSlug" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="20">
     <ingredient name="bulletTip" count="3"/>
     <ingredient name="gunPowder" count="10"/>
     <ingredient name="bulletCasing" count="3"/>
@@ -370,7 +370,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_clay" count="1"/>
 </recipe>
 
-<recipe name="rocket" count="1" craft_area="ammoWorkstation" craft_exp_gain="15">
+<recipe name="rocket" count="1" craft_area="ammoWorkstation" craft_tool="toolAndDieSet" craft_exp_gain="15">
 	<ingredient name="rocketTip" count="1"/>
 	<ingredient name="gunPowder" count="16"/>
 	<ingredient name="ductTape" count="3"/>
@@ -1300,8 +1300,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="RabbitTrap(Unbaited)" count="1" craft_exp_gain="100">
-	<ingredient name="wood" count="10"/>
-	<ingredient name="yuccaFibers" count="5"/>
+	<ingredient name="wood" count="50"/>
+	<ingredient name="yuccaFibers" count="20"/>
+	<ingredient name="glue" count="2"/>
+	<ingredient name="nail" count="8"/>
 </recipe>
 
 <recipe name="SpeedTrapSet" count="1" craft_area="workbench" craft_exp_gain="100">
@@ -2159,7 +2161,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="onion" count="1"/>
     <ingredient name="mushrooms" count="1"/>
     <ingredient name="pepper" count="1"/>
-    <ingredient name="ChickenGrilled" count="1"/>
+    <ingredient name="ChickenFried" count="1"/>
 </recipe>
  
 <recipe name="chickenstock" count="1" craft_area="microwave" craft_exp_gain="100">
@@ -6090,18 +6092,18 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- * * * * * * * * * * * * BluePrint Work Station Recipes * * * * * * * * * * * * -->
 
 <recipe name="cntShippingCrateBlueprintSmall" count="1" scrapable="False" craft_area="BlueprintWorkStation" craft_tool="calipers" craft_exp_gain="250">
-	<ingredient name="repairKit" count="4"/>
-	<ingredient name="BlueprintPaper" count="25"/>
+	<ingredient name="repairKit" count="1"/>
+	<ingredient name="BlueprintPaper" count="10"/>
 </recipe>
 
 <recipe name="cntShippingCrateBlueprintMedium" count="1" scrapable="False" craft_area="BlueprintWorkStation" craft_tool="calipers" craft_exp_gain="500">
-	<ingredient name="repairKit" count="8"/>
-	<ingredient name="BlueprintPaper" count="50"/>
+	<ingredient name="repairKit" count="2"/>
+	<ingredient name="BlueprintPaper" count="25"/>
 </recipe>
 	
 <recipe name="cntShippingCrateBlueprintLarge" count="1" scrapable="False" craft_area="BlueprintWorkStation" craft_tool="calipers" craft_exp_gain="750">
-	<ingredient name="repairKit" count="16"/>
-	<ingredient name="BlueprintPaper" count="100"/>
+	<ingredient name="repairKit" count="4"/>
+	<ingredient name="BlueprintPaper" count="50"/>
 </recipe>
 
 </recipes>

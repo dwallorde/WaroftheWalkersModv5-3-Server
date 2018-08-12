@@ -454,7 +454,7 @@
 	<!-- Auger -->
 
 <SoundDataNode name="auger_empty"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="6" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_empty"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -463,27 +463,28 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Idle">
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="14" volume="4" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_idle" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Reload">
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="2" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/Auger_Reload" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="Auger_Fire_Start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="2" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/Auger_Fire_Start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_fire_lp" Loop="true"/>
+	<!-- <AudioClip ClipName="#AugerSound?auger_fire_lp2" Loop="true"/> -->
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Auger/auger_fire_end"/>
-	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
+	<LocalCrouchVolumeScale name="0.1"/> <CrouchNoiseScale name="0.1"/> <NoiseScale name="0.1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 	<!-- Chainsaw -->
 
 <SoundDataNode name="chainsaw_empty"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="6" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_empty"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -492,12 +493,12 @@
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_idle">
-	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
+	<Noise ID="3" range="14" volume="8" time="3" muffled_when_crouched="0.65" heat_map_strength="0.05" heat_map_time="60"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_idle" AudioSourceName="Sounds/Weapons/Motorized/Auger/AugerAudioSourceLoop"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_start"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="10" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<Sequence/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_start"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_lp" Loop="true"/>
@@ -505,13 +506,13 @@
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_fire_rev"> <AudioSource name="Sounds/Weapons/Motorized/Auger/AugerAudioSource"/> <NetworkAudioSource name="Sounds/AudioSource_WeaponFire_Network"/>
-	<Noise ID="4" range="25" volume="20" time="2" heat_map_strength="0.2" heat_map_time="90"/>
+	<Noise ID="4" range="25" volume="10" time="2" heat_map_strength="0.2" heat_map_time="90"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev1"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_fire_rev2"/>
 	<LocalCrouchVolumeScale name="1"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="3"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
 <SoundDataNode name="chainsaw_reload"> <AudioSource name="Sounds/AudioSource_Interact"/>
-	<Noise ID="2" range="7" volume="11" time="4" muffled_when_crouched="0.5"/>
+	<Noise ID="2" range="7" volume="6" time="4" muffled_when_crouched="0.5"/>
 	<AudioClip ClipName="Sounds/Weapons/Motorized/Chainsaw/chainsaw_reload"/>
 	<LocalCrouchVolumeScale name="0.5"/> <CrouchNoiseScale name="1"/> <NoiseScale name="1"/> <MaxVoices name="2"/> <MaxRepeatRate name="0.01"/> </SoundDataNode>
 
@@ -3116,6 +3117,16 @@
 
 <SoundDataNode name="alarm1"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
 	<AudioClip ClipName="Sounds/Electricity/Alarms/alarm1_lp" Loop="true"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
+	
+<SoundDataNode name="speakeralarm1"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
+	<AudioClip ClipName="#SpeakerAlarm?SpeakerAlarm1" Loop="true"/>
+	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
+	
+<SoundDataNode name="screameralarm1"> <AudioSource name="Sounds/AudioSource_VO_Announce"/>
+	<!-- <Noise ID="4" range="25" volume="20" time="2" heat_map_strength="50" heat_map_time="1250"/> -->
+	<Noise ID="3" range="14" volume="16" time="3" muffled_when_crouched="0.65" heat_map_strength="50" heat_map_time="60"/>
+	<AudioClip ClipName="#SpeakerAlarm?ScreamerAlarm1" Loop="true"/>
 	<LocalCrouchVolumeScale name="1.0"/> <CrouchNoiseScale name="0.5"/> <NoiseScale name="1"/> <MaxVoices name="10"/> <MaxRepeatRate name="0"/> </SoundDataNode>
 
 	<!-- Turret   -->

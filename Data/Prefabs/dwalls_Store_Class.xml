@@ -10,6 +10,6 @@
     <property name="TraderAreaProtect" value="20,0,20" />
     <property name="TraderAreaTeleportSize" value="32, 20, 27" />
     <property name="TraderAreaTeleportCenter" value="1, 1, 1" />
-    <property name="RotationToFaceNorth" value="2" />
+    <property name="RotationToFaceNorth" value="0" />
     <property name="YOffset" value="0" />
 </prefab>

@@ -1502,6 +1502,7 @@
 	<item name="MagazineMedicine"/>
 	<item name="MagazineClothing/Armor"/>
 	<item name="MagazineMiningTools"/>
+	<item name="MagazineMechanicTools"/>
 </lootgroup>
 
 <lootgroup name="magazines_rare">
@@ -2394,7 +2395,6 @@
 </lootgroup>
 
 <lootgroup name="tools_rare" count="1">
-	<item name="toolAndDieSet" prob="0.1"/>
 	<item name="pickaxeSteel"/>
 	<item name="fireaxeSteel"/>
 	<item name="shovelSteel"/>
@@ -2430,7 +2430,6 @@
 	<item name="lockPick" count="5,10"/>
 	<item name="paintTool" prob="0.3"/>
 	<item name="wireTool"/>
-	<item name="calipers" prob="0.1"/>
 	<item name="sledgehammer" prob="0.02"/>
 	<item name="clawHammer" prob="0.25"/>
 	<item name="wrench" prob="0.35"/>
@@ -2604,13 +2603,6 @@
 	<item group="ClassFragmentsBuilderWorkingStiffGroup" count="1" prob="0.04"/>
 	<item group="ClassFragmentsElectricianWorkingStiffGroup" count="1" prob="0.04"/>
 	<item group="ClassFragmentsMechanicWorkingStiffGroup" count="1" prob="0.035"/>
-	<item name="anvil" count="1" prob="0.1"/>
-	<item name="hammerRounding" count="1" prob="0.09"/>
-	<item name="rivetGun" count="1" prob="0.06"/>
-	<item name="rebarBender" count="1" prob="0.04"/>
-	<item name="weldingTool" count="1" prob="0.035"/>
-	<item name="calipers" prob="0.025"/>
-	<item name="toolAndDieSet" prob="0.025"/>
 	<item group="cosmeticsElectricParts" count="1,2" prob="0.05" />
 	<item group="cosmeticsElectriconicParts" count="1,2" prob="0.05" />
 	<item group="cosmeticsMechanicalParts" count="1,2" prob="0.05" />
@@ -2651,7 +2643,6 @@
 	<item name="firstAidKit"/>
 	<item name="ImmunizationShot"/>
 	<item name="herbalAntibiotics"/>
-	<item name="beaker"/>
 	<item name="antibiotics"/>
 	<item name="VitaminD"/>
 	<item name="bloodDrawKit" count="1"/>
@@ -2679,13 +2670,12 @@
 	<item name="antibiotics" count="1,3"/>
 	<item name="ImmunizationShot" count="1,2" prob="0.12"/>
 	<item name="TraumaFirstAidKit" count="1,2" prob="0.15"/>
-	<item name="beaker" count="1" prob="0.1"/>
 </lootgroup>
 
 <lootgroup name="sportingGoods_common">
 	<item group="clothes"/>
-	<item name="cookingGrill"/>
-	<item name="cookingPot"/>
+	<item name="cookingGrill" prob="0.1"/>
+	<item name="cookingPot" prob="0.1"/>
 	<item name="batBaseballWooden"/>
 	<item name="leather"/>
 	<item name="bedroll"/>
@@ -2698,13 +2688,9 @@
 	<item name="huntingKnife"/>
 	<item name="knifeKitchen"/>
 	<item group="warmClothes"/>
-	<item name="loafPan"/>
-	<item name="cuttingBoard"/>
 </lootgroup>
 	
 <lootgroup name="sportingGoods_rare">
-	<item name="fryingPan"/>
-	<item name="roastingPan"/>
 	<item name="knifeCombat"/>
 	<item name="gunPowder" count="20,50"/>
 	<item name="bulletCasing" count="20,50"/>
@@ -2885,7 +2871,6 @@
 	<item name="nail" count="10,40" prob="0.3"/>
 	<item name="forgedIron" count="5,15" prob="0.25"/>
 	<item name="forgedSteel" count="3,12" prob="0.2"/>
-	<item name="calipers" prob="0.15"/>
 	<item name="minibikeChassis" prob="0.4"/>
 	<item name="minibikeSeat" prob="0.4"/>
 	<item name="minibikeHandlebars" prob="0.4"/>
@@ -2944,7 +2929,6 @@
 	<item name="antibiotics" prob="0.5"/>
 	<item name="bloodDrawKit" prob="0.15"/>
 	<item name="firstAidKitSchematic" prob="0.15"/>
-	<item name="beaker" prob="0.15"/>
 </lootgroup>
 
 <!-- Fantasy Treasure Chest Loot -->
@@ -2991,8 +2975,6 @@
 	<item group="building_materials" count="1,2" prob="0.3"/>
 	<item group="tools_uncommon" count="1" prob="0.1"/>
 	<item group="tools_rare" count="1" prob="0.05"/>
-	<item name="calipers" count="1" prob="0.06"/>
-	<item name="toolAndDieSet" count="1" prob="0.05"/>
 	<item name="BuildingSupplyFlare" count="1" prob="0.1"/>
 	<item group="QuestChain" count="1" prob="0.1"/>
 	<item group="QuestChallenge" count="1" prob="0.15"/>
@@ -3501,12 +3483,8 @@
 
 <!-- Lootcontainer 5 Kitchen Oven Loot -->
 <lootcontainer id="5" count="0,1" size="4,3" sound_open="UseActions/open_mailbox" sound_close="UseActions/close_mailbox" loot_quality_template="baseTemplate">
-	<item name="cookingPot" count="1,2" prob="0.2" />
-	<item name="cookingGrill" count="1" prob="0.15" />
-	<item name="cuttingBoard" count="1" prob="0.09" />
-	<item name="fryingPan" count="1" prob="0.05" />
-	<item name="roastingPan" count="1" prob="0.05" />
-	<item name="loafPan" count="1" prob="0.075" />
+	<item name="cookingPot" count="1,2" prob="0.08" />
+	<item name="cookingGrill" count="1" prob="0.09" />
 	<item name="scrapIron" count="1,15" prob="0.9" />
 	<item name="emptyJar" count="1,2" />
 	<item name="canEmpty" count="1,2" />
@@ -3537,12 +3515,8 @@
 
 <!-- Lootcontainer 8 Kitchen Sink Cabinet Loot -->
 <lootcontainer id="8" count="0,1" size="4,3" sound_open="UseActions/open_cupboard" sound_close="UseActions/close_cupboard" loot_quality_template="baseTemplate">
-	<item name="cookingPot" count="1" />
-	<item name="cookingGrill" count="1" prob="0.15" />
-	<item name="cuttingBoard" count="1" prob="0.09" />
-	<item name="fryingPan" count="1" prob="0.05" />
-	<item name="roastingPan" count="1" prob="0.05" />
-	<item name="loafPan" count="1" prob="0.075" />
+	<item name="cookingPot" count="1" prob="0.09" />
+	<item name="cookingGrill" count="1" prob="0.09" />
 	<item name="emptyJar" count="1,2" />
 	<item name="canEmpty" count="1,2" />
 	<item name="HouseholdChemicals" count="1,2" prob="0.3" />
@@ -4308,8 +4282,6 @@
 	<item name="footballHelmet" prob="0.3" />
 	<item name="clawHammer" prob="0.3" />
 	<item name="wrench" prob="0.3" />
-	<item name="calipers" prob="0.1" />
-	<item name="toolAndDieSet" prob="0.1" />
 	<item group="minibikeParts" prob="6" />
 </lootcontainer>
 
@@ -4372,7 +4344,6 @@
 	<item name="forgedIron" count="10,20" prob="2" />
 	<item name="forgedSteel" count="5,20" />
 	<item name="ForgedTungsten" count="2,20" prob="0.5" />
-	<item name="anvil" count="1" />
 	<item name="nail" count="20,60" />
 	<item name="ironArrowHead" count="10,30" />
 	<item name="steelArrowHead" count="10,20" />
