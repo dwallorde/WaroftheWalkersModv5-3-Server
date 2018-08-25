@@ -1604,9 +1604,9 @@
 	<item group="rare_healthandfoodBooks" prob="0.11"/>
 	<item group="rare_toolsBooks" prob="0.1"/>
 	<item group="rare_weaponsBooks" prob="0.1"/>
-	<item name="scrappingVol6electricParts" prob="0.1"/>
-	<item name="scrappingVol7electronicParts" prob="0.1"/>
-	<item name="scrappingVol8mechanicalParts" prob="0.1"/>
+	<item name="scrappingVol6electricParts" prob="0.05"/>
+	<item name="scrappingVol7electronicParts" prob="0.05"/>
+	<item name="scrappingVol8mechanicalParts" prob="0.05"/>
 	<item group="QuestChallenge" count="1" prob="0.1"/>
 </lootgroup>
 
@@ -1649,6 +1649,7 @@
 </lootgroup>
 	
 <lootgroup name="common_weaponsBooks">
+	<item name="blunderbussDoubleBarrelSchematic" prob="0.0075"/>
 	<item name="crossbowSchematic" prob="0.005"/>
 	<item name="pistolBook" prob="0.0045"/>
 	<item name="pumpShotgunSchematic" prob="0.003"/>
@@ -1697,18 +1698,18 @@
 	<item group="common_healthandfoodBooks" prob="0.11"/>
 	<item group="common_toolBooks" prob="0.1"/>
 	<item group="common_weaponsBooks" prob="0.1"/>
-	<item name="scrappingVol1iron" prob="0.1"/>
-	<item name="scrappingVol2lead" prob="0.1"/>
-	<item name="scrappingVol3brass" prob="0.1"/>
-	<item name="scrappingVol4tungsten" prob="0.1"/>
-	<item name="scrappingVol5scrapPlastics" prob="0.1"/>
+	<item name="scrappingVol1iron" prob="0.05"/>
+	<item name="scrappingVol2lead" prob="0.05"/>
+	<item name="scrappingVol3brass" prob="0.05"/>
+	<item name="scrappingVol4tungsten" prob="0.05"/>
+	<item name="scrappingVol5scrapPlastics" prob="0.05"/>
 	<item name="BlueprintPaper" count="1,2" prob="0.11"/>
 </lootgroup>
 
 <lootgroup name="books" count="1">
-	<item group="Magazines" prob="0.1"/>
+	<item group="Magazines" prob="0.075"/>
 	<item group="commonBooks"/>
-	<item group="rareBooks" prob="0.05"/>
+	<item group="rareBooks" prob="0.2"/>
 </lootgroup>
 
 <lootgroup name="booksNoMagazine" count="1">
@@ -5156,6 +5157,42 @@
 	<item group="SchematicDropSmall" count="1" prob="0.25" />
 	<item group="MilitaryWeaponsDropSmall" count="1" prob="0.15" />
 	<item group="ClassFragmentsDropwLootSmall" count="1" prob="0.115" />
+</lootcontainer>
+
+<!-- Lootcontainer 187 Ambulance Loot -->
+<lootcontainer id="187" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="automotive+tools+junk"/>
+	<item group="medicine" prob="0.5" />
+	<item name="bloodDrawKit" count="1,2" prob="0.4" />
+	<item group="ClassFragmentsTradesman" count="1" prob="0.03" />
+</lootcontainer>
+
+<!-- Lootcontainer 188 Tow Truck Loot -->
+<lootcontainer id="188" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="automotive+tools+junk"/>
+	<item name="crowbarSteel" count="1" prob="0.2" />
+	<item name="crowbarTungsten" count="1" prob="0.05" />
+	<item group="minibikeParts" count="1" prob="0.4" />
+	<item group="ClassFragmentsTradesman" count="1" prob="0.03" />
+</lootcontainer>
+
+<!-- Lootcontainer 189 Fire Truck Loot -->
+<lootcontainer id="189" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="automotive+tools+junk"/>
+	<item name="fireaxeIron" count="1" prob="0.2" />
+	<item name="fireaxeSteel" count="1" prob="0.1" />
+	<item name="waterBarrelFull" count="1" prob="0.25" />
+	<item name="bucketWater" count="1,2" prob="0.4" />
+	<item group="ClassFragmentsTradesman" count="1" prob="0.03" />
+</lootcontainer>
+
+<!-- Lootcontainer 190 Police Car Loot -->
+<lootcontainer id="190" count="0,2" size="7,4" sound_open="UseActions/open_vehicle" sound_close="UseActions/close_vehicle" open_time="4" loot_quality_template="baseTemplate">
+	<item group="automotive+tools+junk"/>
+	<item group="weaponsBasicGuns+ammo" count="1" prob="0.5" />
+	<item group="weaponsMilitaryGuns+ammo" count="1" prob="0.3" />
+	<item group="weaponsMelee" count="1" prob="0.15" />
+	<item group="ClassFragmentsTradesman" count="1" prob="0.03" />
 </lootcontainer>
 
 </lootcontainers>

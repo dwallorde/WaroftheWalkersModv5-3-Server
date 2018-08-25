@@ -935,7 +935,7 @@ NOT the TextureNumber.
 <block id="74" name="tungstenOre">
 	<property name="Extends" value="ice" />
 	<property name="CustomIcon" value="ice" />
-	<property name="Material" value="Mmetal_medium" />
+	<property name="Material" value="tungsten" /> <!-- was Mmetal_medium -->
 	<property name="MaxDamage" value="1250" />
 	<property name="DropScale" value="2" />
 	<drop event="Harvest" name="TungstenFragment" count="19" prob="1.0" tool_category="harvestingTools"/>
@@ -3962,6 +3962,7 @@ group desc for stuff like metal siding
 	<property name="CanPickup" value="true"/>
 	<property name="Group" value="Science"/>
 	<property name="EconomicValue" value="885"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="382" name="brickCNRInside">
@@ -4534,6 +4535,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="8"/>
 	</property> -->
 	<property name="EconomicValue" value="97"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="432" name="mineHubcap">
@@ -4552,6 +4554,7 @@ group desc for stuff like metal siding
 		<property name="UpgradeHitCount" value="8"/>
 	</property> -->
 	<property name="EconomicValue" value="146"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="433" name="mineAirFilter">
@@ -4570,6 +4573,7 @@ group desc for stuff like metal siding
 		<property name="ItemCount" value="1"/>
 		<property name="UpgradeHitCount" value="8"/>
 	</property> -->
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="434" name="cntToilet01">
@@ -4978,15 +4982,18 @@ kind of free
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#WaterBarrel?WaterBarrelFullPrefab" />
-	<property name="MultiBlockDim" value="1,2,1"/>
+	<!-- <property name="MultiBlockDim" value="1,2,1"/> -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<!-- <property name="HandleFace" value="South"/> -->
 	<property name="ImposterDontBlock" value="true"/>
-	<property name="Class" value="PlantGrowing"/>
+	<!-- <property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.Next" value="waterBarrelEmpty"/>
-	<property name="PlantGrowing.GrowthRate" value="1500"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.GrowthRate" value="1500"/>
 	<property name="PlantGrowing.FertileLevel" value="0"/>
-	<property name="PlantGrowing.IsRandom" value="false"/>
+	<property name="PlantGrowing.IsRandom" value="false"/> -->
+	<property name="Class" value="UpgradeRated"/>
+	<property name="UpgradeRated.ToBlock" value="waterBarrelEmpty"/>
+	<property name="UpgradeRated.Rate" value="1500"/>
 	<property name="DowngradeBlock" value="waterBarrelEmpty"/>
 	<drop event="Destroy" name="waterBarrelEmpty" count="0"/>
 	<property name="CanPickup" value="false" param1="waterEmptyBarrel"/>
@@ -5002,7 +5009,7 @@ kind of free
 	<property name="Material" value="Mmetal_weak"/>
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#WaterBarrel?WaterBarrelEmptyPrefab" />
-	<property name="MultiBlockDim" value="1,2,1"/>
+	<!-- <property name="MultiBlockDim" value="1,2,1"/> -->
 	<property name="IsTerrainDecoration" value="true"/>
 	<!-- <property name="HandleFace" value="South"/> -->
 	<property name="ImposterDontBlock" value="true"/>
@@ -6648,6 +6655,7 @@ kind of free
 	<property name="CustomIcon" value="burntWoodBlock1"/>
 	<property name="LightOpacity" value="3"/>
 	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="594" name="woodWedgeCNRInsideBottom">
@@ -6761,6 +6769,7 @@ kind of free
 	<drop event="Destroy" name="brokenGlass" count="1,4"/>
 	<property name="EconomicValue" value="10"/>
 	<property name="Group" value="Tools/Traps,Science"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="607" name="trapGlassBusinessSheet1x1">
@@ -10763,8 +10772,8 @@ kind of free
 	<property name="OnlySimpleRotations" value="true"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="MultiBlockDim" value="2,2,1"/>
-	<property name="ParticleName" value="forge" />
-	<property name="ParticleOffset" value="0.5,0,0.5" />
+	<!-- <property name="ParticleName" value="forge" />
+	<property name="ParticleOffset" value="0.5,0,0.5" /> -->
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="Stacknumber" value="1" />
 	<property name="HeatMapStrength" value="1"/>
@@ -10900,7 +10909,7 @@ kind of free
 	<property name="Shape" value="ModelEntity" />
 	<property name="Model" value="#Furniture?ChemicalDrumPrefab" />
 	<property name="IsTerrainDecoration" value="true"/>
-	<property name="MultiBlockDim" value="1,2,1" />
+	<!-- <property name="MultiBlockDim" value="1,2,1" /> -->
 	<property name="ImposterDontBlock" value="true"/>
 	<drop event="Harvest" name="HouseholdChemicals" count="10" tool_category="harvestingTools"/>
 	<drop event="Destroy" name="HouseholdChemicals" count="5,10"/>
@@ -19203,6 +19212,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="1679" name="shotgunTurret">
@@ -19229,6 +19239,7 @@ kind of free
 	<property name="FireSound" value="pump_shotgun_fire"/>
 	<property name="EconomicValue" value="2500"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20051,7 +20062,7 @@ kind of free
 	<property name="OpenSound" value="open_hatch_scrap"/>
 	<property name="CloseSound" value="close_hatch_scrap"/>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="vaultHatch_v1"/>
+		<property name="ToBlock" value="hatchVault"/>
 		<property name="Item" value="forgedSteel"/>
 		<property name="ItemCount" value="12"/>
 		<property name="UpgradeHitCount" value="6"/>
@@ -20099,16 +20110,36 @@ kind of free
 
 <!-- WOTW Mod -->
 <block id="1731" name="hatchVault_v3">
-	<property name="Extends" value="hatchVault"/>
+	<!-- <property name="Extends" value="hatchVault" param1="UpgradeBlock"/> -->
 	<property name="CustomIcon" value="vaultHatch_v3"/>
 	<property name="DescriptionKey" value="doorDesc"/>
+	<property name="Class" value="DoorSecure"/>
+	<property name="Material" value="Msteel"/>
+	<property name="Weight" value="12"/>
+	<property name="PassThroughDamage" value="true"/>
+	<property name="LightOpacity" value="1"/>
+	<property name="Shape" value="ModelEntity"/>
+	<property name="Tag" value="Door"/>
+	<property name="Place" value="Door"/> <!-- build restriction -->
+	<property name="PlaceEverywhere" value="true"/>
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Model" value="Entities/Doors/steel_hatch_v3Prefab"/> <property name="ModelOffset" value="0,.5,0"/>
 	<property name="MultiBlockDim" value="1,1,1"/>
 	<property name="ImposterExchange" value="imposterPlate" param1="77"/>
+	<property name="Mesh-Damage-1" value="Door/Door_DMG0"/>
+	<property name="Mesh-Damage-2" value="Door/Door_DMG1"/>
+	<property name="Mesh-Damage-3" value="Door/Door_DMG2"/>
+	<property name="Mesh-Damage-4" value="Door/Door_DMG3"/>
+	<property name="Mesh-Damage-5" value="Door/Door_DMG4"/>
 	<property name="OpenSound" value="open_hatch_vault"/>
 	<property name="CloseSound" value="close_hatch_vault"/>
+	<property class="RepairItems"> <property name="forgedSteel" value="12"/> </property>
 	<property name="DowngradeBlock" value="hatchVault_v2"/>
+	<drop event="Harvest" name="scrapIron" count="96" prob="1"/>
+	<drop event="Destroy" count="0"/>
+	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
+	<property name="Group" value="Building"/>
+	<property name="EconomicValue" value="432"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20255,6 +20286,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="1000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20289,6 +20321,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="2500"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20324,6 +20357,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="750"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20359,6 +20393,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="1250"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20401,6 +20436,7 @@ kind of free
 	<property name="Stacknumber" value="25"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="EconomicValue" value="1250"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20433,6 +20469,7 @@ kind of free
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="EconomicValue" value="220"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20492,6 +20529,7 @@ kind of free
 	<property name="ImposterExchange" value="imposterBlock" param1="109"/>
 	<property name="Group" value="Tools/Traps,Science"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20521,6 +20559,7 @@ kind of free
 	<!-- <property name="FireSound" value="pump_shotgun_fire"/> -->
 	<property name="EconomicValue" value="10000"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20541,6 +20580,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Screwdriver"/>
 	<drop event="Harvest" name="scrapBrass" count="2,4" tool_category="Screwdriver"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20561,6 +20601,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Screwdriver"/>
 	<drop event="Harvest" name="scrapBrass" count="2,4" tool_category="Screwdriver"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20581,6 +20622,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Screwdriver"/>
 	<drop event="Harvest" name="scrapBrass" count="2,4" tool_category="Screwdriver"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20593,6 +20635,7 @@ kind of free
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="HandleFace" value="West"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20605,6 +20648,7 @@ kind of free
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20617,6 +20661,7 @@ kind of free
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20641,6 +20686,7 @@ kind of free
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -20653,6 +20699,7 @@ kind of free
 	<property name="DescriptionKey" value="lightPlayerGroupDesc"/>
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="1751" name="ClassElectricianVendingMachinePOI">
@@ -20802,9 +20849,9 @@ kind of free
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="HarvestOverdamage" value="false"/>
 	<drop event="Destroy" name="treeBirdnest" count="0"/>
-	<property name="EconomicValue" value="12"/>
-	<property name="EconomicBundleSize" value="5"/>
-	<property name="SellableToTrader" value="false"/>
+	<property name="EconomicValue" value="200"/>
+	<property name="EconomicBundleSize" value="1"/>
+	<property name="SellableToTrader" value="true"/>
 	<property name="Group" value="Resources"/>
 </block>
 
@@ -21363,7 +21410,7 @@ kind of free
 	<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	<property name="Class" value="PlantGrowing"/>
 	<property name="PlantGrowing.Next" value="CustomCarHelper"/>
-	<property name="PlantGrowing.GrowthRate" value="1200"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
+	<property name="PlantGrowing.GrowthRate" value="1600"/> <!-- setting 1 is erratic. Recommend 2+ for testing or use -->
 	<property name="PlantGrowing.FertileLevel" value="0"/>
 	<property name="PlantGrowing.IsRandom" value="false"/>
 	<drop event="Destroy" count="0"/>
@@ -21375,18 +21422,17 @@ kind of free
 		<property name="CreativeMode" value="Dev"/>
 	</block>
 
-<!-- To Do Loot -->
 <!-- WOTW MOD -->
 <block id="1787" name="carAmbulance">
 	<property name="CustomIcon" value="carAmbulance"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="300" />
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="187"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
-	<property name="Collide" value="melee,bullet,arrow,rocket"/>
+	<!-- <property name="Collide" value="melee,bullet,arrow,rocket"/> -->
 	<property name="Model" value="#Vehicles?carAmbulancePrefab"/>
 	<property name="MultiBlockDim" value="3,3,6"/>
 	<property name="ImposterDontBlock" value="true"/>
@@ -21791,14 +21837,13 @@ kind of free
 	<property name="ActivationDistance" value="6"/>
 </block>
 
-<!-- To Do Loot -->
 <!-- WOTW MOD -->
 <block id="1792" name="carFireTruck">
 	<property name="CustomIcon" value="carFireTruck"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="500" />
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="189"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -21975,14 +22020,13 @@ kind of free
 	<property name="ActivationDistance" value="6"/>
 </block>
 
-<!-- To Do Loot -->
 <!-- WOTW MOD -->
 <block id="1794" name="carPoliceHelicopter">
 	<property name="CustomIcon" value="carPoliceHelicopter"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="500" />
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="190"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -22067,14 +22111,13 @@ kind of free
 	<property name="ActivationDistance" value="6"/>
 </block>
 
-<!-- To Do Loot -->
 <!-- WOTW MOD -->
 <block id="1795" name="carPoliceInterceptor">
 	<property name="CustomIcon" value="carPoliceInterceptor"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="300" />
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="190"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -22389,14 +22432,13 @@ kind of free
 	<property name="ActivationDistance" value="6"/>
 </block>
 
-<!-- To Do Loot -->
 <!-- WOTW MOD -->
 <block id="1799" name="carTowTruck">
 	<property name="CustomIcon" value="carTowTruck"/>
 	<property name="Material" value="metal"/>
 	<property name="MaxDamage" value="400" />
 	<property name="Class" value="CarExplodeLoot"/>
-	<property name="LootList" value="19"/>
+	<property name="LootList" value="188"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
@@ -22636,7 +22678,7 @@ kind of free
 	<property name="IsTerrainDecoration" value="true"/>
 	<property name="Place" value="TowardsPlacer"/>
 	<property name="Model" value="#Vehicles?WreckedTruckPrefab"/>
-	<property name="MultiBlockDim" value="5,2,2"/>
+	<property name="MultiBlockDim" value="2,2,5"/>
 	<property name="ShowModelOnFall" value="false"/>
 	<drop event="Harvest" name="leather" count="3,9" prob="0.5"/>
 	<drop event="Harvest" name="scrapIron" count="30,50"/>
@@ -23483,6 +23525,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="500"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2002" name="switch">
@@ -23501,6 +23544,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="50"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -23548,6 +23592,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="2000"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2005" name="batterybank">
@@ -23582,6 +23627,7 @@ kind of free
 	<property name="Stacknumber" value="1"/>
 	<property name="TakeDelay" value="15"/>
 	<property name="EconomicValue" value="400"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2006" name="electricwirerelay">
@@ -23601,6 +23647,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="28"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2007" name="pressureplate">
@@ -23627,6 +23674,7 @@ kind of free
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="124"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2008" name="speaker">
@@ -23651,6 +23699,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="72"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2009" name="electrictimerrelay">
@@ -23677,6 +23726,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="TakeDelay" value="5"/>
 	<property name="EconomicValue" value="119"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2010" name="bladeTrap">
@@ -23717,6 +23767,7 @@ kind of free
 	<property name="Stacknumber" value="25"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="EconomicValue" value="444"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2011" name="dartTrap">
@@ -23747,6 +23798,7 @@ kind of free
 	<property name="Stacknumber" value="10"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="EconomicValue" value="220"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2012" name="rampCornerCutoutTest">
@@ -23813,6 +23865,7 @@ kind of free
 	<property name="EconomicValue" value="524"/>
 	<property name="DescriptionKey" value="pressureplateDesc"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <!-- WOTW Mod -->
@@ -23868,6 +23921,7 @@ kind of free
 	<property name="Group" value="Science"/>
 	<property name="TakeDelay" value="10"/>
 	<property name="PickupJournalEntry" value="cameraTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2021" name="industrialLight01_player">
@@ -23886,6 +23940,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1,2" tool_category="Screwdriver"/>
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Screwdriver"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2022" name="porchLight01_player">
@@ -23896,6 +23951,7 @@ kind of free
 	<property name="RuntimeSwitch" value="true"/>
 	<property name="HandleFace" value="West"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2023" name="ceilingLight01_player">
@@ -23907,6 +23963,7 @@ kind of free
 	<property name="StabilitySupport" value="false"/> <!-- build restriction -->
 	<property name="Model" value="Entities/Lighting/player_ceilingLight01Prefab"/> <property name="HandleFace" value="Top"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2024" name="ceilingLight02_player">
@@ -23918,6 +23975,7 @@ kind of free
 	<property name="Model" value="Entities/Lighting/player_ceilingLight02Prefab"/>
 	<property name="HandleFace" value="Top"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2025" name="wallLight01_player">
@@ -23929,6 +23987,7 @@ kind of free
 	<property name="Model" value="Entities/Lighting/player_wall_light01Prefab"/>
 	<property name="HandleFace" value="South"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2026" name="ceilingLight07_player">
@@ -23948,11 +24007,13 @@ kind of free
 	<drop event="Harvest" name="scrapPlastics" count="1,2" tool_category="Screwdriver"/>
 	<property name="Model" value="Entities/Lighting/player_ceilingLight07Prefab"/>
 	<property name="TakeDelay" value="5"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2028" name="tripwirepost">
 	<property name="Class" value="TripWire"/>
 	<property name="Material" value="wood_weak"/>
+	<property name="MaxDamage" value="400"/>
 	<property name="StabilitySupport" value="false"/>
 	<property name="Shape" value="ModelEntity"/>
 	<property name="Mesh" value="models"/>
@@ -23960,11 +24021,16 @@ kind of free
 	<property name="ModelOffset" value="0,0.5,0"/>
 	<property name="ImposterDontBlock" value="true"/>
 	<property name="RequiredPower" value="1"/>
+	<property class="RepairItems">
+		<property name="wood" value="10"/>
+		<property name="electricParts" value="2"/>
+	</property>
 	<property name="Group" value="Science"/>
 	<drop event="Destroy" name="wood" count="5"/>
 	<drop event="Fall" name="woodDebris" count="1" prob="0.3" stick_chance="1"/>
 	<property name="EconomicValue" value="16"/>
 	<property name="PickupJournalEntry" value="triggerDelayDurationTip,passthroughTriggeringTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2029" name="electricfencepost">
@@ -23993,6 +24059,7 @@ kind of free
 	<drop event="Destroy" count="0"/>
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="62"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2030" name="motionsensor">
@@ -24019,6 +24086,7 @@ kind of free
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="0.75" stick_chance="1"/>
 	<property name="EconomicValue" value="135"/>
 	<property name="PickupJournalEntry" value="cameraTip,triggerDelayDurationTip,passthroughTriggeringTip"/>
+	<property name="CraftingSkillGroup" value="craftSkillScience"/>
 </block>
 
 <block id="2031" name="classLootCrateBuildingSupplies">

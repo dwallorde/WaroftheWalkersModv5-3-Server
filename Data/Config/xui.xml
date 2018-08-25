@@ -332,7 +332,7 @@
 			<window name="craftingInfoPanel" />
 			<window name="SMXCraftingQueue" />																<!-- Enable this if you want to use the increased CRAFTING QUEUE -->
 <!--		<window name="windowCraftingQueue" /> -->
-			<window name="windowToolsAmmoStation" />
+			<window name="windowToolsMechanicBench" />
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
 <!--		<window name="windowCombine" /> -->

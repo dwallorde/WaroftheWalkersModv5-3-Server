@@ -50,7 +50,7 @@
 	<property name="DropInventoryBlock" value="cntBackpackDropped"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalSP" value="bottledWater,canPasta,firstAidBandage,keystoneBlock,PlayerStarterCrate,Quest_TraderLocation"/>
 	<property name="ItemsOnEnterGame.GameModeSurvivalMP" value="bottledWater,canPasta,firstAidBandage,keystoneBlock,PlayerStarterCrate,Quest_TraderLocation"/>
-	<property name="ExperienceGain" value="173"/>
+	<property name="ExperienceGain" value="250"/>
 	<property name="LegsExplosionDamageMultiplier" value="1"/>
 	<property name="ArmsExplosionDamageMultiplier" value="1"/>
 	<property name="HeadExplosionDamageMultiplier" value="1"/>
@@ -181,7 +181,7 @@
 
 	<property name="CorpseBlock" value="GoreBlock1Prefab"/>
 	<property name="CorpseBlockChance" value="1"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="DeadBodyHitPoints" value="350"/> <!-- For harvesting -->
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -236,7 +236,7 @@
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1700"/>
+	<property name="ExperienceGain" value="2040"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -261,7 +261,7 @@
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1900"/>
+	<property name="ExperienceGain" value="2280"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -288,7 +288,7 @@
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -315,7 +315,7 @@
 	<property name="WalkType" value="2"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2200"/>
+	<property name="ExperienceGain" value="2640"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -341,7 +341,7 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="HandItem" value="handZombieCop"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="LootListOnDeath" value="61"/>
 	<property name="HeadDismemberThreshold" value="0.2"/>
 	<property name="LowerLegDismemberThreshold" value="0.105"/>
@@ -355,7 +355,7 @@
 
 <entity_class name="zombieWightFeralRadiated" extends="zombieWightFeral">
 	<property name="MaxHealth" value="1600"/>
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/feral_rad"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
@@ -474,7 +474,7 @@
 	<property name="SoundSleeperBackToSleep" value="sleeperbacktosleep"/>
 	<property name="SpawnOnGround" value="true" />
 	<property name="TimeStayAfterDeath" value="30" />
-	<property name="ExperienceGain" value="6000"/>
+	<property name="ExperienceGain" value="7200"/>
 	<property name="MaxHealth" value="3000"/>
 	<property name="DeadBodyHitPoints" value="700"/>
 	<property name="HandItem" value="handZombieBehemoth"/>
@@ -552,7 +552,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -573,7 +573,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="MaxHealth" value="250"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -596,7 +596,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -619,7 +619,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="MaxHealth" value="400"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -631,7 +631,7 @@
 <entity_class name="zombieBoeFeral" extends="zombieBoe">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="161"/>
@@ -647,7 +647,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="161"/>
@@ -675,7 +675,7 @@
 	<property name="NightApproachSpeed" value="0.75"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="LootListOnDeath" value="78"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -701,7 +701,7 @@
 	<property name="NightApproachSpeed" value="1.25"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="LootListOnDeath" value="78"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -729,7 +729,7 @@
 	<property name="NightApproachSpeed" value="1.15"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="162"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -756,7 +756,7 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="LootListOnDeath" value="162"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -786,7 +786,7 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="LootListOnDeath" value="162"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -805,7 +805,7 @@
 	<property name="WalkType" value="1"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
@@ -834,7 +834,7 @@
 	<property name="WalkType" value="1"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="PhysicsBody" value="zombieFat"/>
 	<property name="RootMotion" value="true"/>
@@ -854,7 +854,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -865,7 +865,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="LootListOnDeath" value="85"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -873,7 +873,7 @@
 <entity_class name="zombieFemaleFatFeral" extends="zombieFemaleFat">
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="163"/>
@@ -889,7 +889,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="163"/>
@@ -915,7 +915,7 @@
 	<property name="WalkType" value="5"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="TintMaterial2" value="79,40,26"/>
 	
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -926,7 +926,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
@@ -942,7 +942,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="Mesh" value="Zombies/zombieStandardJoeRagdoll"/>
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
@@ -956,7 +956,7 @@
 <entity_class name="zombieJoeFeral" extends="zombieJoe">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -972,7 +972,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -993,7 +993,7 @@
 	<property name="WalkType" value="1"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
 	<property name="CanClimbLadders" value="true"/>
@@ -1018,7 +1018,7 @@
 	<property name="WalkType" value="1"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
 	<property name="CanClimbLadders" value="true"/>
@@ -1035,7 +1035,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1047,7 +1047,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1056,7 +1056,7 @@
 <entity_class name="zombieMoeFeral" extends="zombieMoe">
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -1072,7 +1072,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1093,7 +1093,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1115,7 +1115,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1129,7 +1129,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1141,7 +1141,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1150,7 +1150,7 @@
 <entity_class name="zombieArleneFeral" extends="zombieArlene">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -1166,7 +1166,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1187,7 +1187,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="200"/>
-	<property name="ExperienceGain" value="400"/>
+	<property name="ExperienceGain" value="480"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1208,7 +1208,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="200"/>
-	<property name="ExperienceGain" value="400"/>
+	<property name="ExperienceGain" value="480"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1221,7 +1221,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="350"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1233,7 +1233,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="350"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1242,7 +1242,7 @@
 <entity_class name="zombieScreamerFeral" extends="zombieScreamer">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="550"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -1258,7 +1258,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="950"/>
-	<property name="ExperienceGain" value="1900"/>
+	<property name="ExperienceGain" value="2280"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="164"/>
@@ -1279,7 +1279,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1301,7 +1301,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1315,7 +1315,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1327,7 +1327,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1336,7 +1336,7 @@
 <entity_class name="zombieDarleneFeral" extends="zombieDarlene">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -1352,7 +1352,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1373,7 +1373,7 @@
 	<property name="WalkType" value="5"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1395,7 +1395,7 @@
 	<property name="WalkType" value="5"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -1409,7 +1409,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1421,7 +1421,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1430,7 +1430,7 @@
 <entity_class name="zombieMarleneFeral" extends="zombieMarlene">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -1446,7 +1446,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1462,7 +1462,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="TintMaterial3" value="23,17,13"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1476,7 +1476,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="TintMaterial3" value="23,17,13"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -1486,7 +1486,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1497,7 +1497,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1506,7 +1506,7 @@
 <entity_class name="zombieYoFeral" extends="zombieYo">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="164"/>
@@ -1522,7 +1522,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1537,7 +1537,7 @@
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="RootMotion" value="true"/>
 	<property name="TintMaterial2" value="36,38,45"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1551,7 +1551,7 @@
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="RootMotion" value="true"/>
 	<property name="TintMaterial2" value="36,38,45"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1562,7 +1562,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1573,7 +1573,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1582,7 +1582,7 @@
 <entity_class name="zombieSteveFeral" extends="zombieSteve">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="164"/>
@@ -1598,7 +1598,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1611,7 +1611,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="HandItem" value="handZombie02"/>
 	<property name="MaxHealth" value="150"/>
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="360"/>
 	<property name="Class" value="EntityZombieCrawl"/>
 	<property name="WalkType" value="4"/>
 	<property name="CanClimbLadders" value="false"/>
@@ -1627,7 +1627,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie02"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1636,7 +1636,7 @@
 <entity_class name="zombieSteveCrawlerFeral" extends="zombieSteveCrawler">
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="164"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
@@ -1652,7 +1652,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1676,7 +1676,7 @@
 	<property name="RotateToGround" value="true"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="150"/>
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="360"/>
 </entity_class>
 
 <!-- Added V5.3: zombieDarleneCrawlerRadiated -->
@@ -1685,7 +1685,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="250" />
@@ -1695,7 +1695,7 @@
 <entity_class name="zombieDarleneCrawlerFeral" extends="zombieDarleneCrawler">
 	<property name="Mesh"   value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
@@ -1711,7 +1711,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardDarleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1733,7 +1733,7 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="360"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="150" />
 </entity_class>
@@ -1744,7 +1744,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="250" />
@@ -1754,7 +1754,7 @@
 <entity_class name="zombieArleneCrawlerFeral" extends="zombieArleneCrawler">
 	<property name="Mesh"   value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
@@ -1770,7 +1770,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardArleneRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1792,7 +1792,7 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="400"/>
+	<property name="ExperienceGain" value="480"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="200" />
 </entity_class>
@@ -1803,7 +1803,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="400" />
@@ -1813,7 +1813,7 @@
 <entity_class name="zombieMoeCrawlerFeral" extends="zombieMoeCrawler">
 	<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
@@ -1829,7 +1829,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardSteveRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1845,7 +1845,7 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="360"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="150" />
 </entity_class>
@@ -1856,7 +1856,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="250" />
@@ -1866,7 +1866,7 @@
 <entity_class name="zombieJoeCrawlerFeral" extends="zombieJoeCrawler">
 	<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
@@ -1882,7 +1882,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardJoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1904,7 +1904,7 @@
 	<property name="WalkType"  value="4" />
 	<property name="CanClimbLadders"     value="false" />
 	<property name="RotateToGround" value="true"/>
-	<property name="ExperienceGain" value="300"/>
+	<property name="ExperienceGain" value="360"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="150" />
 </entity_class>
@@ -1915,7 +1915,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="Mesh"   value="Zombies/zombieStandardBoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="RootMotion"   value="true" />
 	<property name="MaxHealth" value="250" />
@@ -1925,7 +1925,7 @@
 <entity_class name="zombieBoeCrawlerFeral" extends="zombieBoeCrawler">
 	<property name="Mesh"   value="Zombies/zombieStandardBoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
@@ -1941,7 +1941,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="Mesh"   value="Zombies/zombieStandardBoeRagdoll" />
 	<property name="HandItem"  value="handZombie02Feral" />
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.11"/>
 	<property name="NightApproachSpeed" value="1.11"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -1956,7 +1956,7 @@
 	<property name="WalkType" value="7"/>
 	<property name="RootMotion" value="true"/>
 	<property name="MaxHealth" value="250" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="TintMaterial1" value="36,38,45"/>
 	<property name="LootListOnDeath" value="89"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1970,7 +1970,7 @@
 	<property name="WalkType" value="7"/>
 	<property name="RootMotion" value="true"/>
 	<property name="MaxHealth" value="250" />
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="TintMaterial1" value="36,38,45"/>
 	<property name="LootListOnDeath" value="89"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1982,7 +1982,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="165"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -1994,7 +1994,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="165"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2003,7 +2003,7 @@
 <entity_class name="zombieBusinessManFeral" extends="zombieBusinessMan">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -2019,7 +2019,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -2034,7 +2034,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
@@ -2056,7 +2056,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="SoundRandom" value="Enemies/Snow_Zombie_Male/zombiemalesnowroam"/>
@@ -2076,7 +2076,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/> <!-- To Do V5.2 New Buff 50% Weaker -->
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="166"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2088,7 +2088,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/> <!-- To Do V5.2 New Buff 50% Weaker -->
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="166"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2097,7 +2097,7 @@
 <entity_class name="zombieSnowFeral" extends="zombieSnow">
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="166"/>
@@ -2113,7 +2113,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="166"/>
@@ -2141,7 +2141,7 @@
 	<property name="NightWanderSpeed" value="0.08"/>
 	<property name="NightApproachSpeed" value="1.1"/>
 	<property name="PanicSpeed" value="1.2"/> -->
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="HeadDismemberThreshold" value="0"/>
 	<property name="LowerLegDismemberThreshold" value="0"/>
 	<property name="UpperLegDismemberThreshold" value="0"/>
@@ -2170,7 +2170,7 @@
 	<property name="SoundHurt" value="Enemies/Spider_Zombie/spiderpain"/>
 	<property name="SoundSense" value="Enemies/Spider_Zombie/spidersense"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="HeadDismemberThreshold" value="0"/>
 	<property name="LowerLegDismemberThreshold" value="0"/>
 	<property name="UpperLegDismemberThreshold" value="0"/>
@@ -2189,7 +2189,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2201,7 +2201,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="164"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2210,7 +2210,7 @@
 <entity_class name="zombieSpiderFeral" extends="zombieSpider">
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ApproachSpeed" value="1.1"/>
@@ -2222,7 +2222,7 @@
 <entity_class name="zombieSpiderFeralRadiated" extends="zombieSpiderFeral">
 	<property name="HandItem" value="handZombie02Feral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/spider_rad"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
@@ -2244,7 +2244,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -2262,7 +2262,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -2282,7 +2282,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2304,7 +2304,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="161"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2324,7 +2324,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -2350,7 +2350,7 @@
 	<property name="HandItem" value="handZombieBurning"/>
 	<property name="HandItemCrawler" value="handZombieBurningCrawler"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -2375,7 +2375,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="21"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -2397,7 +2397,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="LootListOnDeath" value="21"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -2408,7 +2408,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="LootListOnDeath" value="167"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2420,7 +2420,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="LootListOnDeath" value="167"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2429,7 +2429,7 @@
 <entity_class name="zombieNurseFeral" extends="zombieNurse">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="167"/>
@@ -2445,7 +2445,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="167"/>
@@ -2471,7 +2471,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2496,7 +2496,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2508,7 +2508,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="LootListOnDeath" value="161"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2520,7 +2520,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="LootListOnDeath" value="161"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2529,7 +2529,7 @@
 <entity_class name="zombieFatHawaiianFeral" extends="zombieFatHawaiian">
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="161"/>
@@ -2545,7 +2545,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="161"/>
@@ -2566,7 +2566,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1700"/>
+	<property name="ExperienceGain" value="2040"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
 	<property name="LootListOnDeath" value="17"/>
@@ -2621,7 +2621,7 @@
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1900"/>
+	<property name="ExperienceGain" value="2280"/>
 	<property name="Weight" value="70"/>
 	<property name="PushFactor" value="20"/>
 	<property name="LootListOnDeath" value="17"/>
@@ -2668,7 +2668,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="Explosion.BlockDamage" value="850"/>
 	<property name="Explosion.EntityDamage" value="250"/>
@@ -2682,7 +2682,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2200"/>
+	<property name="ExperienceGain" value="2640"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="Explosion.BlockDamage" value="850"/>
 	<property name="Explosion.EntityDamage" value="250"/>
@@ -2693,7 +2693,7 @@
 <entity_class name="zombieFatCopFeral" extends="zombieFatCop">
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2640"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -2705,7 +2705,7 @@
 
 <entity_class name="zombieFatCopFeralRadiated" extends="zombieFatCopFeral">
 	<property name="MaxHealth" value="1600"/>
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="ReplaceMaterial0" value="entities/zombies/materials/cop_rad"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
@@ -2720,7 +2720,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="LootListOnDeath" value="65"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2731,7 +2731,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="LootListOnDeath" value="65"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -2744,7 +2744,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="184"/>
 	<property name="WalkType" value="7"/>
@@ -2758,7 +2758,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="184"/>
 	<property name="WalkType" value="7"/>
@@ -2770,7 +2770,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -2788,7 +2788,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardHazmatRagdoll"/>
 	<property name="HandItem" value="handZombieHazMat"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -2810,7 +2810,7 @@
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieWorker"/>
@@ -2833,7 +2833,7 @@
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieWorker"/>
@@ -2847,7 +2847,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="169"/>
@@ -2859,7 +2859,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="169"/>
@@ -2868,7 +2868,7 @@
 
 <entity_class name="zombieUtilityWorkerFeral" extends="zombieUtilityWorker">
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -2884,7 +2884,7 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="HandItem" value="handZombieWorkerFeral"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -2905,7 +2905,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1700"/>
+	<property name="ExperienceGain" value="2040"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieWorker"/>
@@ -2926,7 +2926,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="850"/>
-	<property name="ExperienceGain" value="1900"/>
+	<property name="ExperienceGain" value="2280"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieWorker"/>
@@ -2939,7 +2939,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="170"/>
@@ -2951,7 +2951,7 @@
 	<property name="ParticleOnSpawn" value="ParticleEffects/RadiatedParticlesOnMesh" param1="SetShapeToMesh0"/>
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2200"/>
+	<property name="ExperienceGain" value="2640"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="170"/>
@@ -2960,7 +2960,7 @@
 
 <entity_class name="zombieSoldierFeral" extends="zombieSoldier">
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -2976,7 +2976,7 @@
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/rad_eye"/>
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="MaxHealth" value="1600"/>
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 	<property name="HandItem" value="handZombieCopFeral"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -2987,7 +2987,7 @@
 
 <entity_class name="zombieSkateboarder" extends="zombieBoe">
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll"/>
 	<property name="SoundRandom" value="zombiemaleroam"/>
 	<property name="SoundAlert" value="zombiemalealert"/>
@@ -3002,7 +3002,7 @@
 <!-- Added V5.3.1: zombieSkateboarderHorde -->
 <entity_class name="zombieSkateboarderHorde" extends="zombieBoeHorde">
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="Mesh" value="Zombies/zombieStandardHoodieRagdoll"/>
 	<property name="SoundRandom" value="zombiemaleroam"/>
 	<property name="SoundAlert" value="zombiemalealert"/>
@@ -3020,7 +3020,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="171"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3032,7 +3032,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="171"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3041,7 +3041,7 @@
 <entity_class name="zombieSkateboarderFeral" extends="zombieSkateboarder">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3057,7 +3057,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -3078,7 +3078,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -3101,7 +3101,7 @@
 	<property name="WalkType" value="3"/>
 	<property name="HandItem" value="handZombie"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -3116,7 +3116,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="172"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3128,7 +3128,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="172"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3139,7 +3139,7 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<property name="LootListOnDeath" value="172"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3155,7 +3155,7 @@
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="LootListOnDeath" value="172"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3165,7 +3165,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardOldTimerRagdoll"/>
 	<property name="WalkType" value="3"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="81"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -3175,7 +3175,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardOldTimerRagdoll"/>
 	<property name="WalkType" value="3"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="LootListOnDeath" value="81"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -3186,7 +3186,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="173"/>
@@ -3199,7 +3199,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff40"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="LootListOnDeath" value="38"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="173"/>
@@ -3209,7 +3209,7 @@
 <entity_class name="zombieOldTimerFeral" extends="zombieOldTimer">
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="38"/>
@@ -3226,7 +3226,7 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	<property name="HandItem" value="handZombieFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="LootListOnDeath" value="38"/>
@@ -3239,7 +3239,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="LootListOnDeath" value="83"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3250,7 +3250,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="1100"/>
+	<property name="ExperienceGain" value="1320"/>
 	<property name="LootListOnDeath" value="83"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3263,7 +3263,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="185"/>
 	<property name="WalkType" value="7"/>
@@ -3277,7 +3277,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1400"/>
+	<property name="ExperienceGain" value="1680"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="185"/>
 	<property name="WalkType" value="7"/>
@@ -3289,7 +3289,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="800"/>
-	<property name="ExperienceGain" value="1600"/>
+	<property name="ExperienceGain" value="1920"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3307,7 +3307,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardBikerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="1200"/>
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
@@ -3320,7 +3320,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="85"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
@@ -3333,7 +3333,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="85"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
@@ -3348,7 +3348,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="TintMaterial1" value="84,84,84"/>
@@ -3364,7 +3364,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardFarmerRagdoll"/>
 	<property name="HandItem" value="handZombieStrongFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="TintMaterial1" value="84,84,84"/>
@@ -3379,7 +3379,7 @@
 	<property name="MaxHealth" value="600"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="TintMaterial1" value="84,84,84"/>
@@ -3399,7 +3399,7 @@
 	<property name="MaxHealth" value="1000"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="TintMaterial1" value="84,84,84"/>
@@ -3412,7 +3412,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripper"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="84"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -3422,7 +3422,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripper"/>
 	<property name="MaxHealth" value="250"/>
-	<property name="ExperienceGain" value="700"/>
+	<property name="ExperienceGain" value="840"/>
 	<property name="LootListOnDeath" value="84"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
@@ -3434,7 +3434,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripperFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="800"/>
+	<property name="ExperienceGain" value="960"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="174"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3447,7 +3447,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripperFeral"/>
 	<property name="MaxHealth" value="400"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/Z_eye1"/>
 	<property name="LootListOnDeath" value="174"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3457,7 +3457,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripperFeral"/>
 	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="1200"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -3474,7 +3474,7 @@
 	<property name="Mesh" value="Zombies/zombieStandardStripperRagdoll"/>
 	<property name="HandItem" value="handZombieStripperFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ReplaceMaterial2" value="entities/zombies/materials/feral_eye"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -3497,7 +3497,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="MaxHealth" value="500"/>
 	<property name="HandItem" value="handZombieFire"/>
 	<property name="HandItemCrawler" value="handZombieFire"/>
@@ -3520,7 +3520,7 @@
 	<property name="AvatarController" value="AvatarZombie01Controller"/>
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="MaxHealth" value="500"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
@@ -3549,7 +3549,7 @@
 	<property name="HandItem" value="handZombieFire"/>
 	<property name="HandItemCrawler" value="handZombieFire"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -3573,7 +3573,7 @@
 	<property name="HandItem" value="handZombieFireFeral"/>
 	<property name="HandItemCrawler" value="handZombieFireFeral"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3599,7 +3599,7 @@
 	<property name="HandItem" value="handZombieFire"/>
 	<property name="HandItemCrawler" value="handZombieFire"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
 </entity_class>
 
@@ -3618,7 +3618,7 @@
 	<property name="HandItem" value="handZombieFireFeral"/>
 	<property name="HandItemCrawler" value="handZombieFireFeral"/> <!-- override the default replacement of handZombie02 with a specific hand item -->
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3634,7 +3634,7 @@
 	<property name="WalkType" value="7"/>
 	<property name="RootMotion" value="true"/>
 	<property name="MaxHealth" value="500" />
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="HandItem" value="handZombieFire"/>
 	<property name="HandItemCrawler" value="handZombieFire"/>
 	<property name="TintMaterial1" value="36,38,45"/>
@@ -3651,7 +3651,7 @@
 	<property name="WalkType" value="7"/>
 	<property name="RootMotion" value="true"/>
 	<property name="MaxHealth" value="1000" />
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3678,7 +3678,7 @@
 	<property name="HandItem" value="handZombieFire"/>
 	<property name="HandItemCrawler" value="handZombieFire"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="CanClimbLadders" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -3703,7 +3703,7 @@
 	<property name="HandItem" value="handZombieFireFeral"/>
 	<property name="HandItemCrawler" value="handZombieFireFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="CanClimbLadders" value="true"/>
@@ -3722,7 +3722,7 @@
 	<property name="HandItem" value="handZombieElectric"/>
 	<property name="HandItemCrawler" value="handZombieElectric"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="LootListOnDeath" value="83"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3735,7 +3735,7 @@
 	<property name="HandItem" value="handZombieElectricFeral"/>
 	<property name="HandItemCrawler" value="handZombieElectricFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3754,7 +3754,7 @@
 	<property name="HandItem" value="handZombieElectric"/>
 	<property name="HandItemCrawler" value="handZombieElectric"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="TintMaterial2" value="79,40,26"/>
@@ -3771,7 +3771,7 @@
 	<property name="HandItem" value="handZombieElectricFeral"/>
 	<property name="HandItemCrawler" value="handZombieElectricFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3796,7 +3796,7 @@
 	<!-- <property name="WalkType" value="6"/> -->
 	<property name="WalkType" value="7"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieElectric"/>
@@ -3825,7 +3825,7 @@
 	<property name="HandItem" value="handZombieElectricFeral"/>
 	<property name="HandItemCrawler" value="handZombieElectricFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3841,7 +3841,7 @@
 	<property name="HandItem" value="handZombieElectric"/>
 	<property name="HandItemCrawler" value="handZombieElectric"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="LootListOnDeath" value="65"/>
 	<property name="WalkType" value="7"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="0"/>
@@ -3854,7 +3854,7 @@
 	<property name="HandItem" value="handZombieElectricFeral"/>
 	<property name="HandItemCrawler" value="handZombieElectricFeral"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3877,7 +3877,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="500"/>
-	<property name="ExperienceGain" value="1000"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="RootMotion" value="true"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="HandItem" value="handZombieElectric"/>
@@ -3900,7 +3900,7 @@
 	<property name="ModelType" value="Standard"/>
 	<property name="WalkType" value="2"/>
 	<property name="MaxHealth" value="1000"/>
-	<property name="ExperienceGain" value="2000"/>
+	<property name="ExperienceGain" value="2400"/>
 	<property name="ApproachSpeed" value="1.35"/>
 	<property name="NightApproachSpeed" value="1.35"/>
 	<property name="ReplaceMaterial1" value="entities/zombies/materials/feral_eye"/>
@@ -3997,7 +3997,7 @@
 	<property name="SpawnOnGround" value="true" />
 	<property name="TimeStayAfterDeath" value="30" />
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="DeadBodyHitPoints" value="350"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<!-- Decap and Stun Settings -->	
@@ -4118,7 +4118,7 @@
 	<property name="SpawnOnGround" value="true" />
 	<property name="TimeStayAfterDeath" value="30" />
 	<property name="MaxHealth" value="450"/>
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 	<property name="DeadBodyHitPoints" value="350"/>
 	<property name="HandItem" value="handZombieStrong"/>
 	<!-- Decap and Stun Settings -->	
@@ -4203,7 +4203,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1500" />
 	<property name="LootListOnDeath" value="112" />
-	<property name="ExperienceGain" value="3000"/>
+	<property name="ExperienceGain" value="3600"/>
 </entity_class>
 
 <entity_class name="ZombieNurseAnneBoss" extends="zombieUMATemplateFemale" > <!-- Mini Boss -->
@@ -4211,7 +4211,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1400" />
 	<property name="LootListOnDeath" value="113" />
-	<property name="ExperienceGain" value="2800"/>
+	<property name="ExperienceGain" value="3136"/>
 </entity_class>
 
 <entity_class name="ZombieHousewifeMarianneBoss" extends="zombieUMATemplateFemale" > <!-- Mini Boss -->
@@ -4219,7 +4219,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1400" />
 	<property name="LootListOnDeath" value="115" />
-	<property name="ExperienceGain" value="2800"/>
+	<property name="ExperienceGain" value="3136"/>
 </entity_class>
 
 <entity_class name="ZombieBuilderBobBoss" extends="zombieUMATemplateMale" > <!-- Mini Boss -->
@@ -4227,7 +4227,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1600" />
 	<property name="LootListOnDeath" value="114" />
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 </entity_class>
 
 <entity_class name="ZombieInvestigatorHenryBoss" extends="zombieUMATemplateMale" > <!-- Mini Boss -->
@@ -4235,7 +4235,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1700" />
 	<property name="LootListOnDeath" value="116" />
-	<property name="ExperienceGain" value="3400"/>
+	<property name="ExperienceGain" value="4080"/>
 </entity_class>
 
 <entity_class name="ZombieThugBillyBoss" extends="zombieUMATemplateMale" > <!-- Mini Boss -->
@@ -4243,7 +4243,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="2200" />
 	<property name="LootListOnDeath" value="117" />
-	<property name="ExperienceGain" value="4400"/>
+	<property name="ExperienceGain" value="5280"/>
 </entity_class>
 
 <entity_class name="ZombieMasterLeroyBoss" extends="zombieUMATemplateMale" > <!-- Mini Boss -->
@@ -4251,7 +4251,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1200" />
 	<property name="LootListOnDeath" value="118" />
-	<property name="ExperienceGain" value="2400"/>
+	<property name="ExperienceGain" value="2880"/>
 </entity_class>
 
 <entity_class name="ZombieAccountantZoeBoss" extends="zombieUMATemplateFemale" > <!-- Mini Boss -->
@@ -4259,7 +4259,7 @@
 	<property name="HandItem" value="handBossZombie" />
 	<property name="MaxHealth" value="1100" />
 	<property name="LootListOnDeath" value="119" />
-	<property name="ExperienceGain" value="2200"/>
+	<property name="ExperienceGain" value="2640"/>
 </entity_class>
 
 <entity_class name="ZombieBrawlerBoss" extends="zombieUMATemplateMale" >
@@ -4267,7 +4267,7 @@
 	<property name="HandItem" value="handBossZombieBB" />
 	<property name="MaxHealth" value="1700" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="3400"/>
+	<property name="ExperienceGain" value="4080"/>
 	<property name="AITask-1" value="BreakBlock"/>
 	<property name="AITask-2" value="Territorial"/>
 	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
@@ -4293,7 +4293,7 @@
 	<property name="HandItem" value="handBossZombieSTUN" />
 	<property name="MaxHealth" value="1600" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 	<property name="AITask-1" value="Territorial"/>
 	<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
 	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityNPC"/>
@@ -4316,7 +4316,7 @@
 	<property name="Archetype" value="ZombieSpiderLiz"/>
 	<property name="MaxHealth" value="1400" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="2800"/>
+	<property name="ExperienceGain" value="3360"/>
 	<property name="CanClimbVertical" value="true"/>
 	<property name="WalkType" value="8"/>
 	<property name="Class" value="EntityZombieCop"/>
@@ -4344,7 +4344,7 @@
 	<property name="HandItem" value="handBossZombieHH" />
 	<property name="MaxHealth" value="1800" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="3600"/>
+	<property name="ExperienceGain" value="4320"/>
 	<property name="WanderSpeed" value="0.15"/>
 	<property name="ApproachSpeed" value="0.7"/>
 	<property name="NightWanderSpeed" value="0.15"/>
@@ -4358,7 +4358,7 @@
 	<property name="HandItem" value="handBossZombieHH" />
 	<property name="MaxHealth" value="2000" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="4000"/>
+	<property name="ExperienceGain" value="4800"/>
 	<property name="WanderSpeed" value="0.25"/>
 	<property name="ApproachSpeed" value="1.1"/>
 	<property name="NightWanderSpeed" value="0.5"/>
@@ -4372,7 +4372,7 @@
 	<property name="HandItem" value="handBossZombieBB2" />
 	<property name="MaxHealth" value="2100" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="4200"/>
+	<property name="ExperienceGain" value="5040"/>
 	<property name="WanderSpeed" value="0.25"/>
 	<property name="ApproachSpeed" value="1.1"/>
 	<property name="NightWanderSpeed" value="0.5"/>
@@ -4386,7 +4386,7 @@
 	<property name="HandItem" value="handBossZombieSTUN" />
 	<property name="MaxHealth" value="1600" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="3200"/>
+	<property name="ExperienceGain" value="3840"/>
 	<property name="AITask-1" value="Territorial"/>
 	<property name="AITask-2" value="ApproachAndAttackTarget" param1="EntityPlayer"/>
 	<property name="AITask-3" value="ApproachAndAttackTarget" param1="EntityNPC"/>
@@ -4409,7 +4409,7 @@
 	<property name="Archetype" value="ZombieBossBlobber"/>
 	<property name="MaxHealth" value="1700" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="3400"/>
+	<property name="ExperienceGain" value="4080"/>
 	<property name="CanClimbVertical" value="true"/>
 	<property name="WalkType" value="8"/>
 	<property name="Class" value="EntityZombieCop"/>
@@ -4442,7 +4442,7 @@
 	<property name="Archetype" value="ZombieBossArkham"/>
 	<property name="MaxHealth" value="2200" />
 	<property name="LootListOnDeath" value="119" /> <!-- To Do V5.2 -->
-	<property name="ExperienceGain" value="4400"/>
+	<property name="ExperienceGain" value="5280"/>
 	<property name="CanClimbVertical" value="true"/>
 	<property name="WalkType" value="2"/>
 	<property name="Class" value="EntityZombieCop"/>
@@ -4484,7 +4484,7 @@
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="MaxHealth" value="450" />
 	<property name="LootListOnDeath" value="66" />
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 </entity_class>
 
 <entity_class name="SnowZombieSarah" extends="zombieUMATemplateMale" >
@@ -4500,7 +4500,7 @@
 	<property name="SoundFootstepModifier" value="Enemies/Snow_Zombie_Male/zombiesnowfootstep" />
 	<property name="MaxHealth" value="450" />
 	<property name="LootListOnDeath" value="66" />
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 </entity_class>
 
 <entity_class name="ZombieMechanic" extends="zombieUMATemplateMale" >
@@ -4508,7 +4508,7 @@
 	<property name="HandItem" value="handZombieStrong" />
 	<property name="MaxHealth" value="450" />
 	<property name="LootListOnDeath" value="125" />
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 </entity_class>
 
 <entity_class name="ZombiePrisoner" extends="zombieUMATemplateMale" >
@@ -4518,7 +4518,7 @@
 	<property name="HandItem" value="handZombie" />
 	<property name="MaxHealth" value="250" />
 	<property name="LootListOnDeath" value="126" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 </entity_class>
 
 <entity_class name="ZombiePrisonGuard" extends="zombieUMATemplateMale" >
@@ -4526,7 +4526,7 @@
 	<property name="HandItem" value="handZombieStrong" />
 	<property name="MaxHealth" value="450" />
 	<property name="LootListOnDeath" value="127" />
-	<property name="ExperienceGain" value="900"/>
+	<property name="ExperienceGain" value="1080"/>
 </entity_class>
 
 <entity_class name="ZombieSpiderUMAFreddy" extends="zombieUMATemplateMale" >
@@ -4539,7 +4539,7 @@
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="66" />
 	<property name="WalkType" value="8" />
 	<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -4560,7 +4560,7 @@
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="66" />
 	<property name="WalkType" value="8" />
 	<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -4581,7 +4581,7 @@
 	<property name="NightWanderSpeed" value="0.08" />
 	<property name="NightApproachSpeed" value="1.1" />
 	<property name="PanicSpeed" value="1.2" />
-	<property name="ExperienceGain" value="500"/>
+	<property name="ExperienceGain" value="600"/>
 	<property name="LootListOnDeath" value="66" />
 	<property name="WalkType" value="8" />
 	<property name="SoundRandom" value="Enemies/Spider_Zombie/spiderroam" />
@@ -4655,17 +4655,17 @@
 	<property name="PhysicsBody" value="Stag"/>
 	<property name="Faction" value="animals"/>
 	<property name="CanClimbLadders" value="false"/>
-	<property name="MaxHealth" value="50"/>
+	<property name="MaxHealth" value="100"/>
 	<property name="MaxViewAngle" value="180"/>
-	<property name="WanderSpeed" value="0.7"/>
-	<property name="PanicSpeed" value="2.0"/>
+	<property name="WanderSpeed" value="0.6"/>
+	<property name="PanicSpeed" value="1.6"/>
 	<property name="SurfaceCategory" value="organic"/>
 	<property name="ParticleOnDeath" value="blood_death"/>
 	<property name="SoundHurt" value="Animals/stagpain"/>
 	<property name="SoundDeath" value="Animals/stagdeath"/>
 	<property name="TimeStayAfterDeath" value="300"/>
 	<property name="IsEnemyEntity" value="false"/>
-	<property name="ExperienceGain" value="327"/>
+	<property name="ExperienceGain" value="350"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="rawRedMeat" tool_category="Butcher" count="6"/>
@@ -4684,13 +4684,14 @@
 	<property name="PhysicsBody" value="rabbit"/>
 	<property name="SoundHurt" value="Animals/rabbitpain"/>
 	<property name="SoundDeath" value="Animals/rabbitdeath"/>
-	<property name="PanicSpeed" value="1.5"/>
-	<property name="ExperienceGain" value="173"/>
+	<property name="PanicSpeed" value="1.2"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="SwimOffset" value="2"/>
 	<property name="Faction" value="animals"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="DeadBodyHitPoints" value="150"/>
 	<drop event="Harvest" name="rawRedMeat" tool_category="Butcher" count="2"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="1"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="2"/>
 </entity_class>
 
@@ -4705,13 +4706,14 @@
 	<property name="SoundHurt" value="Animals/Chicken/chickenpain"/>
 	<property name="SoundDeath" value="Animals/Chicken/chickendeath"/>
 	<property name="PanicSpeed" value="1"/>
-	<property name="ExperienceGain" value="173"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="SwimOffset" value="2"/>
 	<property name="Faction" value="animals"/>
 	<property name="HasRagdoll" value="true"/>
 	<property name="HasDeathAnim" value="false"/>
 	<property name="DeadBodyHitPoints" value="150"/>
 	<drop event="Harvest" name="rawWhiteMeat" tool_category="Butcher" count="2"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="1"/>
 	<drop event="Harvest" name="feather" tool_category="Butcher" count="30"/>
 </entity_class>
 
@@ -4727,9 +4729,9 @@
 	<property name="SoundAttack" value="Animals/Boar/boarattack"/>
 	<property name="SoundSense" value="Animals/Boar/boarsense"/>
 	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
-	<property name="PanicSpeed" value="1.2"/>
+	<property name="PanicSpeed" value="1.1"/>
 	<property name="PhysicsBody" value="pig"/>
-	<property name="ExperienceGain" value="173"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="SwimOffset" value="0.7"/>
 	<property name="Faction" value="animals"/>
 	<property name="HasRagdoll" value="true"/>
@@ -4765,10 +4767,10 @@
 	<property name="MaxHealth" value="1200"/>
 	<property name="MaxViewAngle" value="180"/>
 	<property name="WanderSpeed" value="0.25"/>
-	<property name="PanicSpeed" value="2.0"/>
-	<property name="ApproachSpeed" value="1.3"/>
+	<property name="PanicSpeed" value="1.8"/>
+	<property name="ApproachSpeed" value="1.2"/>
 	<property name="NightWanderSpeed" value="0.25"/>
-	<property name="NightApproachSpeed" value="1.4"/>
+	<property name="NightApproachSpeed" value="1.2"/>
 	<property name="MaxTurnSpeed" value="360"/>
 	<property name="IsEnemyEntity" value="true"/>
 
@@ -4807,7 +4809,7 @@
 	<property name="ApproachSpeed" value="1.5"/>
 	<property name="NightWanderSpeed" value="0.3"/>
 	<property name="NightApproachSpeed" value="1.5"/>
-	<property name="PanicSpeed" value="1.5"/>
+	<property name="PanicSpeed" value="1.3"/>
 	<property name="MaxHealth" value="100"/>
 	<property name="SoundRandomTime" value="45.0"/>
 	<property name="SoundAlertTime" value="25.0"/>
@@ -4818,7 +4820,7 @@
 	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack"/>
 	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense"/>
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
-	<property name="ExperienceGain" value="1407"/>
+	<property name="ExperienceGain" value="350"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
 	<property name="AITask-1" value="BreakDoor"/>
 	<property name="AITask-2" value="BreakBlock"/>
@@ -4873,10 +4875,10 @@
 	<property name="Buffs" value="zombieRadiatedBuff80"/>
 	
 	<property name="WanderSpeed" value="0.6"/>
-	<property name="ApproachSpeed" value="1.6"/>
+	<property name="ApproachSpeed" value="1.2"/>
 	<property name="NightWanderSpeed" value="0.3"/>
-	<property name="NightApproachSpeed" value="1.6"/>
-	<property name="PanicSpeed" value="1.6"/>
+	<property name="NightApproachSpeed" value="1.2"/>
+	<property name="PanicSpeed" value="1.2"/>
 	<property name="MaxHealth" value="200"/>
 	<property name="SoundRandomTime" value="45.0"/>
 	<property name="SoundAlertTime" value="25.0"/>
@@ -4887,7 +4889,7 @@
 	<property name="SoundAttack" value="Enemies/Zombie_Dogs/zombiedogattack"/>
 	<property name="SoundSense" value="Enemies/Zombie_Dogs/zombiedogsense"/>
 	<property name="SoundGiveUp" value="Enemies/Zombie_Dogs/zombiedoggiveup"/>
-	<property name="ExperienceGain" value="1407"/>
+	<property name="ExperienceGain" value="500"/>
 	<property name="Immunity" value="sickness;disease;bleeding;wellness"/>
 	<property name="AITask-1" value="BreakDoor"/>
 	<property name="AITask-2" value="BreakBlock"/>
@@ -4968,17 +4970,18 @@
 	<property name="SoundAttack" value="Animals/Bear/bearattack"/>
 	<property name="SoundFootstepModifier" value="Animals/Bear/bear_footstep"/>
 	<property name="SoundGiveUp" value="Animals/Bear/beargiveup"/>
-	<property name="ExperienceGain" value="2509"/>
+	<property name="MaxHealth" value="400"/>
+	<property name="ExperienceGain" value="1200"/>
 	<property name="DeadBodyHitPoints" value="600"/>
-	<drop event="Harvest" name="rawRedMeat" tool_category="Butcher" count="10"/>
+	<drop event="Harvest" name="rawRedMeat" tool_category="Butcher" count="15"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="15"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="4"/>
 </entity_class>
 
 <entity_class name="animalZombieBear" extends="animalBear">
-	<property name="MaxHealth" value="2400"/>
-	<property name="ExperienceGain" value="2916"/>
+	<property name="MaxHealth" value="1200"/>
+	<property name="ExperienceGain" value="3120"/>
 	<property name="HandItem" value="handAnimalZombieBear"/>
 	<property name="ReplaceMaterial0" value="Materials/UMAFur_ZombieBear"/>
 	<property name="DeadBodyHitPoints" value="600"/>
@@ -5042,7 +5045,7 @@
 	<property name="SoundAttack" value="Animals/Wolf/wolfattack"/>
 	<property name="SoundSense" value="Animals/Wolf/wolfsense"/>
 	<property name="SoundGiveUp" value="Animals/Wolf/wolfgiveup"/>
-	<property name="ExperienceGain" value="1407"/>
+	<property name="ExperienceGain" value="720"/>
 	<property name="DeadBodyHitPoints" value="400"/>
 	<drop event="Harvest" name="rawRedMeat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="10"/>
@@ -5053,8 +5056,8 @@
 <entity_class name="animalDireWolf" extends="animalWolf">
 	<property name="Mesh" value="Animals/Wolf/animalStandardDireWolfRagdoll"/>
 	<property name="HandItem" value="handAnimalZombieDogFeral"/>
-	<property name="MaxHealth" value="600"/>
-	<property name="ExperienceGain" value="2916"/>
+	<property name="MaxHealth" value="500"/>
+	<property name="ExperienceGain" value="1440"/>
 	<property name="ReplaceMaterial1" value="entities/animals/wolf/materials/wolfEyeFeral"/>
 	<property name="AITask-1" value="Swim"/>
 	<property name="AITask-2" value="BreakDoor"/>
@@ -5111,9 +5114,10 @@
 	<property name="SoundAttack" value="Animals/Vulture/vultureattack"/>
 	<property name="SoundSense" value="Animals/Vulture/vulturesense"/>
 	<property name="SoundGiveUp" value="Animals/Vulture/vulturegiveup"/>
-	<property name="ExperienceGain" value="798"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="DeadBodyHitPoints" value="175"/>
 	<drop event="Harvest" name="rottingFlesh" tool_category="Butcher" count="3"/>
+	<drop event="Harvest" name="femur" tool_category="Butcher" count="1"/>
 	<drop event="Harvest" name="feather" tool_category="Butcher" count="40"/>
 </entity_class>
 
@@ -5144,7 +5148,7 @@
 	<property name="AITarget-4" value="SetNearestCorpseAsTarget" param1="EntityPlayer"/>
 	<property name="AITarget-5" value="SetNearestEntityAsTarget" param1="EntityNPC"/>
 	<property name="AITarget-6" value="SetNearestEntityAsTarget" param1="EntityPlayer"/>
-	<property name="MaxHealth" value="60"/>
+	<property name="MaxHealth" value="50"/>
 	<property name="HandItem" value="handSnake"/>
 	<property name="Weight" value="70"/>
 	<property name="WanderSpeed" value="0.08"/>
@@ -5162,7 +5166,7 @@
 	<property name="SoundAttack" value="Animals/Snake/snakeattack"/>
 	<property name="AttackTimeoutDay" value="1.5"/>
 	<property name="AttackTimeoutNight" value="1.1"/>
-	<property name="ExperienceGain" value="384"/>
+	<property name="ExperienceGain" value="200"/>
 	<property name="DeadBodyHitPoints" value="150"/>
 	<property name="RootMotion" value="false"/>
 	<property name="HasDeathAnim" value="true"/>
@@ -5188,7 +5192,7 @@
 	<property name="PhysicsBody" value="boar"/>
 	<property name="Mesh" value="Animals/Boar/AnimalBoarStandardRagdoll"/>
 	<property name="HandItem" value="handAnimalWolf"/>
-	<property name="MaxHealth" value="90"/>
+	<property name="MaxHealth" value="100"/>
 	<property name="HasDeathAnim" value="true"/>
 	<property name="RootMotion" value="true"/>
 	<property name="RagdollOnDeathChance" value=".5"/>
@@ -5223,9 +5227,9 @@
 	<property name="SoundAttack" value="Animals/Boar/boarattack"/>
 	<property name="SoundSense" value="Animals/Boar/boarsense"/>
 	<property name="SoundGiveUp" value="Animals/Boar/boargiveup"/>
-	<property name="ExperienceGain" value="1407"/>
+	<property name="ExperienceGain" value="250"/>
 	<property name="DeadBodyHitPoints" value="400"/>
-	<drop event="Harvest" name="rawWhiteMeat" tool_category="Butcher" count="4"/>
+	<drop event="Harvest" name="rawWhiteMeat" tool_category="Butcher" count="5"/>
 	<drop event="Harvest" name="animalHide" tool_category="Butcher" count="7"/>
 	<drop event="Harvest" name="animalFat" tool_category="Butcher" count="6"/>
 	<drop event="Harvest" name="femur" tool_category="Butcher" count="2"/>

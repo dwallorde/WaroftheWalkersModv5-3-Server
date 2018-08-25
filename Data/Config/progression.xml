@@ -339,7 +339,7 @@
 		</effect>
 	</perk>
 
-	<action_skill name="Mining Tools" exp_to_level="750" icon="mining" description_key="miningToolsDesc" title_key="miningTools" skill_point_cost_per_level="0" group="tools">
+	<action_skill name="Mining Tools" exp_to_level="600" icon="mining" description_key="miningToolsDesc" title_key="miningTools" skill_point_cost_per_level="0" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
 			<multiply skill_level="10,20" value="1.32,1.45"/>
@@ -903,9 +903,9 @@
 	icon="weapon_smithing" description_key="craftSkillBluntWeaponsDesc" title_key="craftSkillBluntWeapons" group="weapons" exp_gain_multiplier="0">
 		<requirement perk_level="1" required_player_level="10"/>
 		<requirement perk_level="2" required_player_level="30"/>
-		<requirement perk_level="3" required_player_level="80"/>
-		<requirement perk_level="4" required_player_level="140"/>
-		<requirement perk_level="5" required_player_level="200"/>
+		<requirement perk_level="3" required_player_level="60"/>
+		<requirement perk_level="4" required_player_level="80"/>
+		<requirement perk_level="5" required_player_level="100"/>
 		<effect name="CraftingTime">
 			<multiply skill_level="0,1" value="1.0,0.90"/>
 			<multiply skill_level="1,2" value="0.90,0.80"/>
@@ -961,9 +961,9 @@
 	icon="weapon_smithing" description_key="craftSkillBladeWeaponsDesc" title_key="craftSkillBladeWeapons" group="weapons" exp_gain_multiplier="0">
 		<requirement perk_level="1" required_player_level="10"/>
 		<requirement perk_level="2" required_player_level="30"/>
-		<requirement perk_level="3" required_player_level="80"/>
-		<requirement perk_level="4" required_player_level="140"/>
-		<requirement perk_level="5" required_player_level="200"/>
+		<requirement perk_level="3" required_player_level="60"/>
+		<requirement perk_level="4" required_player_level="80"/>
+		<requirement perk_level="5" required_player_level="100"/>
 		<effect name="CraftingTime">
 			<multiply skill_level="0,1" value="1.0,0.90"/>
 			<multiply skill_level="1,2" value="0.90,0.80"/>
@@ -1019,9 +1019,9 @@
 	icon="weapon_smithing" description_key="craftSkillBowWeaponsDesc" title_key="craftSkillBowWeapons" group="weapons" exp_gain_multiplier="0">
 		<requirement perk_level="1" required_player_level="10"/>
 		<requirement perk_level="2" required_player_level="30"/>
-		<requirement perk_level="3" required_player_level="80"/>
-		<requirement perk_level="4" required_player_level="140"/>
-		<requirement perk_level="5" required_player_level="200"/>
+		<requirement perk_level="3" required_player_level="60"/>
+		<requirement perk_level="4" required_player_level="80"/>
+		<requirement perk_level="5" required_player_level="100"/>
 		<effect name="CraftingTime">
 			<multiply skill_level="0,1" value="1.0,0.90"/>
 			<multiply skill_level="1,2" value="0.90,0.80"/>
@@ -1059,7 +1059,7 @@
 	<perk name="craftSkillBowWeaponsBonus" max_level="1" skill_point_cost_multiplier="1" skill_point_cost_per_level="10" exp_to_level="5000000"
 	icon="weapon_smithing" description_key="craftSkillBowWeaponsBonusDesc" title_key="craftSkillBowWeaponsBonus" group="weapons" exp_gain_multiplier="0">
 		<requirement perk_level="1" required_skill_name="craftSkillBowWeapons" required_skill_level="5"/>
-		<requirement perk_level="1" required_skill_name="ClassFighterMaster" required_skill_level="1"/>
+		<requirement perk_level="1" required_skill_name="ClassSurvivalistMaster" required_skill_level="1"/>
 		<effect name="CraftingTime">
 			<multiply skill_level="1" value="0.30"/>
 		</effect>
@@ -1258,7 +1258,7 @@
 	
 	<!-- Tungsten/Diamond  Tool Crafting -->
 	<perk name="craftSkillTungstenDiamondTools" max_level="5" skill_point_cost_multiplier="1.26" skill_point_cost_per_level="5" exp_to_level="5000000"
-	icon="ui_game_symbol_craftSkillTungstenDiamondTools" description_key="tungstenToolCraftingDesc" title_key="tungstenToolCrafting" group="tools" exp_gain_multiplier="0">
+	icon="ui_game_symbol_craftSkillTungstenDiamondTools" description_key="craftSkillTungstenDiamondToolsDesc" title_key="craftSkillTungstenDiamondTools" group="tools" exp_gain_multiplier="0">
 		<requirement perk_level="1" required_player_level="150"/>
 		<requirement perk_level="2" required_player_level="190"/>
 		<requirement perk_level="3" required_player_level="220"/>
@@ -2402,6 +2402,19 @@
 	<recipe name="scrapIronFrameCNRFull" unlock_level="1"/>
 	<recipe name="scrapIronFrameCNRInside" unlock_level="1"/>
 	<recipe name="scrapIronFrameWedge" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeTip" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeTipStairs" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeStairs" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeIncline" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeTipCNRFullTop" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeTipCNRFullBottom" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeCNRInsideBottom" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeCNRInsideTop" unlock_level="1"/>
+	<recipe name="scrapIronFrameStairs25CornerCNR" unlock_level="1"/>
+	<recipe name="scrapIronFrameCNRRampFiller" unlock_level="1"/>
+	<recipe name="scrapIronFrameArch" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeCNRInsideTop" unlock_level="1"/>
+	<recipe name="scrapIronFrameWedgeCNRInsideTop" unlock_level="1"/>
 </perk>
 
 <!-- Class Only -->
@@ -2800,7 +2813,7 @@
 </perk>
 
 <perk name="Vegetable Stew Recipe" icon="ui_game_symbol_stew" description_key="VegetableStewRecipeDesc" max_level="1" skill_point_cost_per_level="5" group="health">
-	<requirement skill_level="1" required_player_level="20"/>
+	<requirement skill_level="1" required_player_level="40"/>
 	<recipe name="vegetableStew" unlock_level="1"/>
 </perk>
 
@@ -3795,6 +3808,18 @@
 <perk name="scrappingVol8mechanicalPartsPerk" icon="ui_game_symbol_schematic" description_key="schematicPerkGroupDesc" title_key="scrappingVol8mechanicalPartsPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
 	<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
 		<recipe name="mechanicalParts" unlock_level="1"/>
+</perk>
+
+<!-- Class Only -->
+<perk name="steelPolishSchematicPerk" icon="ui_game_symbol_tungstenplating" description_key="schematicClassPerkGroupDesc" title_key="steelPolishSchematicPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<requirement skill_level="1" required_skill_name="ClassBuilderMaster" required_skill_level="1"/>
+	<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
+		<recipe name="steelPolish" unlock_level="1"/>
+</perk>
+
+<perk name="blunderbussDoubleBarrelSchematicPerk" icon="ui_game_symbol_schematic" description_key="schematicPerkGroupDesc" title_key="blunderbussDoubleBarrelSchematicPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="0" group="painting">
+	<requirement skill_level="0" required_skill_name="craftSkillMiscellaneous" required_skill_level="0"/>
+		<recipe name="blunderbussDoubleBarrel" unlock_level="1"/>
 </perk>
 
 

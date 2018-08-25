@@ -1192,7 +1192,7 @@
 			<SMX_Button_3 name="btnExit" caption_key="xuiMenuExit" />
 		</grid>
 		<label name="Edition" depth="2" pos="0, -470" pivot="center" size="250,33" text="War of the Walkers SDX" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Set Edition here -->
-		<label name="Version" depth="2" pos="0, -490" pivot="center" size="250,33" text="V5.3.1 B52" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Set Version here --> <!-- WOTW Version -->
+		<label name="Version" depth="2" pos="0, -490" pivot="center" size="250,33" text="V5.3.2 B57" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Set Version here --> <!-- WOTW Version -->
 
 		<texture style="SMXInfoHeader" depth="2" pos="800,300" pivot="center" />
 		<label name="InfoHeader" depth="3" pos="800,360" pivot="center" size="500,50" text="CHANGELOG" font_size="40" effect="outline" color="[white]" justify="center" />
@@ -2040,7 +2040,25 @@
 
 		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
 
-			<grid name="inventory" rows="1" cols="3" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
+			required_tools="calipers,toolAndDieSet" required_tools_only="true">
+				<required_item_stack name="0"/>
+			</grid>
+		</rect>
+
+	</window>
+	
+	<!--#$-IGS BEGIN: Adding cursor area. -$#-->
+	<window name="windowToolsMechanicBench" width="228" height="121" panel="Right" cursor_area="true" >
+	<!--#$-IGS END.-$#-->
+		<panel style="header.panel">
+			<sprite style="header.icon" atlas="ItemIconAtlas" sprite="ui_game_symbol_wrench"/>
+			<label style="header.name" text="TOOLS" text_key="xuiTools" />
+		</panel>
+
+		<rect name="content" depth="0" pos="0,-46" height="75" disablefallthrough="true" on_press="true">
+
+			<grid name="inventory" rows="1" cols="2" pos="3,-3" cell_width="75" cell_height="75" controller="WorkstationToolGrid" repeat_content="true" allow_sort_order="false"
 			required_tools="calipers,toolAndDieSet" required_tools_only="true">
 				<required_item_stack name="0"/>
 			</grid>

@@ -85,13 +85,13 @@ There is a console command: forcegamestage
 	<config
 		startingWeight ="1"
 		scavengerGameDifficultyBonus="0"
-		adventurerGameDifficultyBonus="0.3"
-		nomadGameDifficultyBonus="0.5"
-		warriorGameDifficultyBonus="0.9"
-		survivalistGameDifficultyBonus="1.3"
-		insaneGameDifficultyBonus="1.8"
-		daysAliveDifficultyBonus="0.3"
-		daysAliveChangeWhenKilled ="0"
+		adventurerGameDifficultyBonus="0.1"
+		nomadGameDifficultyBonus="0.2"
+		warriorGameDifficultyBonus="0.6"
+		survivalistGameDifficultyBonus="1"
+		insaneGameDifficultyBonus="1.5"
+		daysAliveDifficultyBonus="0.2"
+		daysAliveChangeWhenKilled ="1"
 		diminishingReturns ="0.2"
 	/>
 

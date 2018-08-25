@@ -1219,7 +1219,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="stepsound" value="metal" />
 	<property name="stability_glue" value="360" />
 	<property name="Mass" type="int" value="30" />
-	<property name="explosionresistance" value=".6" />
+	<property name="explosionresistance" value="1.6" />
 	<property name="MaxDamage" value="1250" />
 	<property name="Experience" value="5.0"/>
 </material>
