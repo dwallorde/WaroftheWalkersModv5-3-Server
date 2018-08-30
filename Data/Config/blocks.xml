@@ -9045,6 +9045,7 @@ kind of free
 	<property name="ActiveRadiusEffects" value="+heatSource(3)"/>
 	<property class="Workstation">
 		<property name="Modules" value="output,fuel,input"/>
+		<property name="Collide" value="melee,bullet,arrow,rocket"/>
 	</property>
 	<property class="RepairItems">
 		<property name="forgedIron" value="10"/>

@@ -406,11 +406,11 @@
 		
 		<window_group name="toolbelt" actionSet="false">
 <!--		<window name="SMXToolbelt1SMX" anchor="CenterBottom" /> -->		<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD or SIRMOD designs -->
-			<window name="SMXToolbelt2VALMOD" anchor="CenterBottom" />		<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
-			<window name="SMXToolbeltNumbersVALMOD" />						<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXToolbelt2VALMOD" anchor="CenterBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
+<!--		<window name="SMXToolbeltNumbersVALMOD" /> -->					<!-- VALMOD UI -->				<!-- Disable this if you want to use the SMX or SIRMOD designs -->
 <!--		<window name="SMXToolbelt3SIRMOD" anchor="CenterBottom" /> -->	<!-- SIRMOD UI -->				<!-- Disable this if you want to use the SMX or VALMOD designs -->
-<!--		<window name="SMXToolbelt2WOTW" anchor="CenterBottom" /> -->	<!-- WOTW UI -->
-<!--		<window name="SMXToolbeltNumbersWOTW" /> -->					<!-- WOTW UI -->
+			<window name="SMXToolbelt2WOTW" anchor="CenterBottom" />		<!-- WOTW UI -->
+			<window name="SMXToolbeltNumbersWOTW" />						<!-- WOTW UI -->
 <!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->		<!-- STANDARD UI -->			<!-- Enable this for 7DTD standard toolbelt. Disable all of the above! -->
 <!--		<window name="SMXUnitFrame1SMX" anchor="LeftBottom" /> -->		<!-- SMX UI -->					<!-- Disable this if you want to use the VALMOD, SIRMOD or SMX2 designs -->
 <!--		<window name="SMXUnitFrame2VALMOD" anchor="LeftBottom" /> -->	<!-- VALMOD UI -->				<!-- Disable this if you want to use the SIRMOD, SMX or SMX2 designs -->

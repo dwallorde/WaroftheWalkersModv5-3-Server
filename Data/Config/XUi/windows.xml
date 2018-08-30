@@ -320,7 +320,7 @@
 
 	<!-- The following section handles: The TOOLBELT GRID, NUMBERS and BACKGROUND : VALMOD DESIGN -->
 	
-	<window name="SMXToolbelt2VALMOD" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 90" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+	<window name="SMXToolbelt2VALMOD" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 90" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
 		<rect>
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
@@ -371,27 +371,27 @@
 	
 	<!-- The following section handles: The TOOLBELT GRID, NUMBERS and BACKGROUND : WOTW DESIGN -->
 	
-	<window name="SMXToolbelt2WOTW" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 90" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}">
+	<window name="SMXToolbelt2WOTW" width="603" height="78" depth="5" anchor="CenterBottom" pos="-313, 90" backgroundcolor="[black]" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
 		<rect>
 			<sprite depth="8" name="backgroundMain" sprite="menu_empty3px" color="[black]" type="sliced" fillcenter="false" on_press="true" />	
 			<grid depth="1" name="inventory" rows="1" cols="8" pos="3,-3" cell_width="75" cell_height="75" controller="Toolbelt" repeat_content="true">
 				<item_stack name="0"/>
 			</grid>
 			<sprite depth="1" pos="0,0">
-				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-125,45" texture="@file:Mods\SMX\Textures\Toolbelt\wotwtoolbeltbg.png" material="Materials/Transparent Colored"/>
+				<texture depth="500" name="ToolBeltBackground" width="854" height="145" pos="-175,43" texture="@file:Mods\SMX\Textures\Toolbelt\wotwtoolbeltbg.png" material="Materials/Transparent Colored"/>
 			</sprite>
 		</rect>
 	</window>
 	
 	<window name="SMXToolbeltNumbersWOTW" depth="20" width="603" height="22" pos="-313,98" anchor="CenterBottom" controller="ToolbeltWindow" visible="{toolbeltvisible}" cursor_area="true">
-		<label name="slot1" pos="-5,-9" width="22" height="22" text="1" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot2" pos="70,-9" width="22" height="22" text="2" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot3" pos="145,-9" width="22" height="22" text="3" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot4" pos="220,-9" width="22" height="22" text="4" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot5" pos="293,-9" width="22" height="22" text="5" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot6" pos="370,-9" width="22" height="22" text="6" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot7" pos="445,-9" width="22" height="22" text="7" font_size="20" effect="outline" color="[red]" justify="center"/>
-		<label name="slot8" pos="520,-9" width="22" height="22" text="8" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot1" pos="-5,-9" width="22" height="22" text="  [DECEA3]1" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot2" pos="70,-9" width="22" height="22" text="  [DECEA3]2" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot3" pos="145,-9" width="22" height="22" text="  [DECEA3]3" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot4" pos="220,-9" width="22" height="22" text="  [DECEA3]4" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot5" pos="293,-9" width="22" height="22" text="  [DECEA3]5" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot6" pos="370,-9" width="22" height="22" text="  [DECEA3]6" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot7" pos="445,-9" width="22" height="22" text="  [DECEA3]7" font_size="20" effect="outline" color="[red]" justify="center"/>
+		<label name="slot8" pos="520,-9" width="22" height="22" text="  [DECEA3]8" font_size="20" effect="outline" color="[red]" justify="center"/>
 	</window>
 	
 <!-- <<< TOOLBELTS <<< -->
@@ -1191,8 +1191,8 @@
 			<SMX_Button_2 name="btnSave" caption_key="xuiMenuSave" />
 			<SMX_Button_3 name="btnExit" caption_key="xuiMenuExit" />
 		</grid>
-		<label name="Edition" depth="2" pos="0, -470" pivot="center" size="250,33" text="War of the Walkers SDX" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Set Edition here -->
-		<label name="Version" depth="2" pos="0, -490" pivot="center" size="250,33" text="V5.3.2 B57" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Set Version here --> <!-- WOTW Version -->
+		<label name="Edition" depth="2" pos="0, -190" pivot="center" size="250,33" text="War of the Walkers SDX" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Was -470 --> <!-- Set Edition here -->
+		<label name="Version" depth="2" pos="0, -210" pivot="center" size="250,33" text="V5.3.3 B58" font_size="14" effect="outline" color="[white]" justify="center" /> <!-- Was -490 --> <!-- Set Version here --> <!-- WOTW Version -->
 
 		<texture style="SMXInfoHeader" depth="2" pos="800,300" pivot="center" />
 		<label name="InfoHeader" depth="3" pos="800,360" pivot="center" size="500,50" text="CHANGELOG" font_size="40" effect="outline" color="[white]" justify="center" />
